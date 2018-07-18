@@ -1,0 +1,19 @@
+﻿LIBRARY atcfs
+
+EXPORTS
+	Load
+	Dispose
+	GetPluginVersion
+	SetVehicleSpec
+	Initialize=BVE_Initialize
+	Elapse
+	SetPower
+	SetBrake
+	SetReverser
+	KeyDown
+	KeyUp
+	HornBlow
+	DoorOpen
+	DoorClose
+	SetSignal
+	SetBeaconData

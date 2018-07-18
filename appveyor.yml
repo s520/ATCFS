@@ -1,0 +1,42 @@
+﻿version: 1.0.{build}
+branches:
+  except:
+  - gh-pages
+init:
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+environment:
+  BOOST_ROOT: C:\Libraries\boost_1_67_0
+  Configuration: Release
+  Platform: Win32
+  matrix:
+  - TARGET: VS2008
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 3.5
+    PlatformToolset: v90
+  - TARGET: VS2010
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 4.0
+    PlatformToolset: v100
+  - TARGET: VS2012
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 4.0
+    PlatformToolset: v110
+    VisualStudioVersion: 11.0
+  - TARGET: VS2013
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 12.0
+    PlatformToolset: v120
+  - TARGET: VS2015
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 14.0
+    PlatformToolset: v140
+  - TARGET: VS2017
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    ProjectToolsVersion: 15.0
+    PlatformToolset: v141
+build_script:
+- cmd: if %TARGET%==VS2008 ( msbuild Ats.sln /t:build /p:PlatformToolset=%PlatformToolset% ) else ( msbuild Ats.VS201x.sln /t:build /p:PlatformToolset=%PlatformToolset% )
+test: off
+artifacts:
+- path: Release
+  name: ATCFS_%TARGET%
