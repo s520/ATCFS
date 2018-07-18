@@ -1,18 +1,18 @@
 ﻿# ATCFS
 
-[![Build status](https://ci.appveyor.com/api/projects/status/bisgnq49vb3d647m?svg=true)](https://ci.appveyor.com/project/s520/atcfs)
+[![Build status](https://ci.appveyor.com/api/projects/status/aounl4vro2jo7w77?svg=true)](https://ci.appveyor.com/project/s520/atcfs)
 
 ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATC, ATS-P Plugin for BVE5 / OpenBVE On Windows
 
-このプラグインはWin32プラグインです。.NETアセンブリ版は[こちら]()。
+このプラグインはWin32プラグインです。.NETアセンブリ版は[こちら](https://github.com/s520/ATCFS_For_OpenBVE)。
 
 ## Description
 
 新幹線の保安装置を再現するBVE用ATCプラグインです。
 
-詳細な仕様は[ATCFS Specifications.pdf]()をご覧ください。
+詳細な仕様は[ATCFS Specifications.pdf](https://github.com/s520/ATCFS/blob/master/doc/ATCFS%20Specifications.pdf)をご覧ください。
 
-ドキュメントは[こちら]()。
+ドキュメントは[こちら](https://s520.github.io/ATCFS/)。
 
 ## Features
 
