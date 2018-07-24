@@ -361,9 +361,9 @@ void Atsp::CollectPattern() {
         pattern_end_loc_list_[1 + i] = pattern_p_->pattern_end_loc_[i];
         pattern_is_valid_list_[1 + i] = pattern_p_->pattern_is_valid_[i];
     }
-    boost::get<6>(pattern_tget_spd_list_) = atsp_max_spd_;
-    boost::get<6>(pattern_end_loc_list_) = 0.0f;
-    boost::get<6>(pattern_is_valid_list_) = 1;
+    boost::get<1 + USR_PATTERN_P>(pattern_tget_spd_list_) = atsp_max_spd_;
+    boost::get<1 + USR_PATTERN_P>(pattern_end_loc_list_) = 0.0f;
+    boost::get<1 + USR_PATTERN_P>(pattern_is_valid_list_) = 1;
 }
 
 /// <summary>
@@ -394,7 +394,7 @@ void Atsp::AtspCheck() {
 /// 復帰扱いの判定を行う関数
 /// </summary>
 void Atsp::Reset() {
-    if (*TrainSpeed == 0 && *ManualBrakeNotch >= ServiceNotch) {
+    if (*TrainSpeed == 0.0f && *ManualBrakeNotch >= ServiceNotch) {
         if (*ManualBrakeNotch >= EmergencyNotch && section_p_->is_immediate_stop_eb_ == 1) {
             section_p_->is_immediate_stop_eb_ = 0;
             section_p_->is__brake_reset_ = 1;

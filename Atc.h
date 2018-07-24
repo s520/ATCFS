@@ -267,7 +267,7 @@ class Atc :private Base {
     int atc_max_spd_;  //!< 車両ATC最高速度[km/h]
     boost::array<int, ALL_SIGNAL>atc_spd_list_;  //!< 信号インデックスに対応する速度[km/h]
     boost::array<float, BRAKE_STEP>atc_deceleration_;  //!< ATCブレーキ減速度[km/h/s]
-    int atc_reset_sw_;  //!< 確認ボタンの状態(0: 解放, 1: 押下)
+    int atc_reset_sw_;  //!< 確認ボタンの状態(0: 開放, 1: 押下)
     int atc_brake_notch_;  //!< ATC出力ブレーキノッチ(HBを含まない)
     int atc_red_signal_;  //!< 停止現示(0: 消灯, 1: 点灯)
     int atc_green_signal_;  //!< 進行現示(0: 消灯, 1: 点灯)

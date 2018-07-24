@@ -51,11 +51,45 @@ void Sub::PlayAtcAirSound() {
 }
 
 /// <summary>
-/// LCD切り替えSWが押された際に呼び出される関数
+/// LCD切り替えSWが押下された際に呼び出される関数
 /// </summary>
 void Sub::LcdSwDown() {
-    lcd_status_ = (lcd_status_ == 0) ? 1 : 0;
-    next_lcd_sw_down_sound_ = ATS_SOUND_PLAY;
+    if (lcd_sw_ == 0) {
+        lcd_sw_ = 1;
+        lcd_status_ = (lcd_status_ == 0) ? 1 : 0;
+        next_lcd_sw_down_sound_ = ATS_SOUND_PLAY;
+    }
+}
+
+/// <summary>
+/// LCD切り替えSWが開放された際に実行する関数
+/// </summary>
+void Sub::LcdSwUp() {
+    if (lcd_sw_ == 1) {
+        lcd_sw_ = 0;
+        next_lcd_sw_up_sound_ = ATS_SOUND_PLAY;
+    }
+}
+
+/// <summary>
+/// 手元灯SWが押下された際に呼び出される関数
+/// </summary>
+void Sub::LightSwDown() {
+    if (light_sw_ == 0) {
+        light_sw_ = 1;
+        light_status_ = (light_status_ == 0) ? 1 : 0;
+        next_light_sw_down_sound_ = ATS_SOUND_PLAY;
+    }
+}
+
+/// <summary>
+/// 手元灯SWが開放された際に実行する関数
+/// </summary>
+void Sub::LightSwUp() {
+    if (light_sw_ == 1) {
+        light_sw_ = 0;
+        next_light_sw_up_sound_ = ATS_SOUND_PLAY;
+    }
 }
 
 /// <summary>
@@ -123,6 +157,15 @@ void Sub::PlaySound() {
 
     lcd_sw_down_sound_ = next_lcd_sw_down_sound_;
     next_lcd_sw_down_sound_ = ATS_SOUND_CONTINUE;
+
+    lcd_sw_up_sound_ = next_lcd_sw_up_sound_;
+    next_lcd_sw_up_sound_ = ATS_SOUND_CONTINUE;
+
+    light_sw_down_sound_ = next_light_sw_down_sound_;
+    next_light_sw_down_sound_ = ATS_SOUND_CONTINUE;
+
+    light_sw_up_sound_ = next_light_sw_up_sound_;
+    next_light_sw_up_sound_ = ATS_SOUND_CONTINUE;
 }
 
 /// <summary>

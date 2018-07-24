@@ -34,6 +34,9 @@ class Sub {
     int prev_brake_status_;  //!< 1フレーム前のATCブレーキの状態(0: 緩解, 1: 作動)
     int next_atc_air_sound_;  //!< 1フレーム後のATCブレーキの緩解音の状態
     int next_lcd_sw_down_sound_;  //!< 1フレーム後のLCD切り替えSWの押下音の状態
+    int next_lcd_sw_up_sound_;  //!< 1フレーム後のLCD切り替えSWの開放音の状態
+    int next_light_sw_down_sound_;  //!< 1フレーム後の手元灯SWの押下音の状態
+    int next_light_sw_up_sound_;  //!< 1フレーム後の手元灯SWの開放音の状態
 
     void PlayAtcAirSound(void);
     void DisplayClock(void);
@@ -51,8 +54,14 @@ class Sub {
     int cv_voltage_;  //!< 制御電圧
     int atc_air_sound_;  //!< ATCブレーキの緩解音の状態
     int reverser_postion_;  //!< レバーサー位置(0: 中立, 1: 前, 2: 後)
+    int lcd_sw_;  //!< LCD切り替えSWの状態(0: 開放, 1: 押下)
     int lcd_status_;  //!< LCDの状態(0: 表示1, 1: 表示2)
     int lcd_sw_down_sound_;  //!< LCD切り替えSWの押下音の状態
+    int lcd_sw_up_sound_;  //!< LCD切り替えSWの開放音の状態
+    int light_sw_;  //!< 手元灯SWの状態(0: 開放, 1: 押下)
+    int light_status_;  //!< 手元灯の状態(0: 消灯, 1: 点灯)
+    int light_sw_down_sound_;  //!< 手元灯SWの押下音の状態
+    int light_sw_up_sound_;  //!< 手元灯SWの開放音の状態
     boost::array<int, 6>digital_clock_;  //!< 1桁ごと表示するデジタル時計
     boost::array<int, 28>speedometer_;  //!< 10km/h刻みの0系/200系用速度計の針
     int adj_loc_;  //!< 距離表示に加算する補正値[m]
@@ -61,6 +70,9 @@ class Sub {
     virtual ~Sub(void);
     void Init(void);
     void LcdSwDown(void);
+    void LcdSwUp(void);
+    void LightSwDown(void);
+    void LightSwUp(void);
     void SetAdjLoc(int distance);
     void Exe(void);
 };
