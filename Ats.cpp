@@ -27,6 +27,8 @@ BOOL APIENTRY DllMain(HANDLE hModule, DWORD ul_reason_for_call, LPVOID lpReserve
         g_atsp.Time = &g_time;
         g_atsp.ManualBrakeNotch = &g_brakeNotch;
 
+        g_wiper.DeltaT = &g_deltaT;
+
         g_sub.TrainSpeed = &g_speed;
         g_sub.Time = &g_time;
         g_sub.Reverser = &g_reverser;
