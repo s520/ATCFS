@@ -157,6 +157,7 @@ ATS_API ATS_HANDLES WINAPI Elapse(ATS_VEHICLESTATE vehicleState, int *panel, int
 
     g_atc.Location = vehicleState.Location;  // 列車位置[m]
     g_atsp.Location = vehicleState.Location;  // 列車位置[m]
+    g_sub.Current = vehicleState.Current;  // 電流値[A]
 
     PassedBeacon();  // SetBeaconData
 
@@ -288,7 +289,13 @@ ATS_API ATS_HANDLES WINAPI Elapse(ATS_VEHICLESTATE vehicleState, int *panel, int
     panel[203] = boost::get<3>(g_sub.digital_clock_);  // デジタル時計 (分)の一の位
     panel[204] = boost::get<4>(g_sub.digital_clock_);  // デジタル時計 (秒)の十の位
     panel[205] = boost::get<5>(g_sub.digital_clock_);  // デジタル時計 (秒)の一の位
-    panel[206] = static_cast<int>(abs(vehicleState.Current) * 1000);  // 電流値
+    panel[206] = static_cast<int>(vehicleState.Current * 1000);  // 電流値[A * 1000] (力行: +, ブレーキ: -)
+    panel[207] = static_cast<int>(abs(vehicleState.Current) * 1000);  // 電流値[A * 1000] (力行およびブレーキ: +)
+    panel[208] = g_sub.current_negative_;  // 電流値[A]の負号
+    panel[209] = boost::get<0>(g_sub.current_list_);  // 電流値[A]の百の位
+    panel[210] = boost::get<1>(g_sub.current_list_);  // 電流値[A]の十の位
+    panel[211] = boost::get<2>(g_sub.current_list_);  // 電流値[A]の一の位
+    panel[212] = boost::get<3>(g_sub.current_list_);  // 電流値[A]の小数第一位
 
     // 0系, 200系用
     panel[214] = g_sub.ac_voltage_;  // 電車線電圧計

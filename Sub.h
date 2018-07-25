@@ -40,6 +40,7 @@ class Sub {
 
     void PlayAtcAirSound(void);
     void DisplayClock(void);
+    void DisplayCurrent(void);
     void DisplayReverser(void);
     void ResetSpeedometer(void);
     void RunSpeedometer(void);
@@ -50,6 +51,9 @@ class Sub {
     const int *Time;  //!< ゲーム内時刻[ms]
     const int *Reverser;  //!< レバーサー位置(-1: 後, 0: 中立, 1: 前)
     const int *atc_brake_notch_;  //!< ATCブレーキ出力ノッチ
+    float Current;  //!< 電流値[A]
+    int current_negative_;  //!< 電流値[A]の負号
+    boost::array<int, 4>current_list_;  //!< 1桁ごと表示する電流値[A]
     int ac_voltage_;  //!< 交流電圧
     int cv_voltage_;  //!< 制御電圧
     int atc_air_sound_;  //!< ATCブレーキの緩解音の状態

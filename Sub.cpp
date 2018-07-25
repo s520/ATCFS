@@ -118,6 +118,32 @@ void Sub::DisplayClock() {
 }
 
 /// <summary>
+/// 1桁ごと分割された電流値を出力する関数
+/// </summary>
+void Sub::DisplayCurrent() {
+    if (Current < 0) {
+        current_negative_ = 1;
+    } else {
+        current_negative_ = 0;
+    }
+    int current_abs = static_cast<int>(abs(Current) * 10);
+    int current100 = current_abs / 1000;
+    int current10 = (current_abs % 1000) / 100;
+    int current1 = (current_abs % 100) / 10;
+    int current_decimal1 = current_abs % 10;
+    if (current100 == 10) {
+        for (std::size_t i = 0; i < current_list_.size(); i++) {
+            current_list_[i] = 9;
+        }
+    } else {
+        boost::get<0>(current_list_) = (current100 == 0) ? 10 : current100;
+        boost::get<1>(current_list_) = (current100 == 0 && current10 == 0) ? 10 : current10;
+        boost::get<2>(current_list_) = current1;
+        boost::get<3>(current_list_) = current_decimal1;
+    }
+}
+
+/// <summary>
 /// レバーサの位置を表示する関数
 /// </summary>
 void Sub::DisplayReverser() {
@@ -174,6 +200,7 @@ void Sub::PlaySound() {
 void Sub::Exe() {
     PlayAtcAirSound();
     DisplayClock();
+    DisplayCurrent();
     DisplayReverser();
     ResetSpeedometer();
     RunSpeedometer();

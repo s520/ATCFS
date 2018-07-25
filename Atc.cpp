@@ -1106,9 +1106,9 @@ void Atc::BrakeExeD() {
 void Atc::DisplaySpd(int spd, boost::array<int, 3>&display_spd) {
     int spd100 = spd / 100;
     int spd10 = (spd % 100) / 10;
-    int spd1 = (spd % 100) % 10;
+    int spd1 = spd % 10;
     if (spd100 >= 10) {
-        for (int i = 0; i < 3; i++) {
+        for (std::size_t i = 0; i < display_spd.size(); i++) {
             display_spd[i] = 9;
         }
     } else {
