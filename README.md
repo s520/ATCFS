@@ -1,6 +1,7 @@
 ﻿# ATCFS
 
 [![Build status](https://ci.appveyor.com/api/projects/status/aounl4vro2jo7w77?svg=true)](https://ci.appveyor.com/project/s520/atcfs)
+[![Report](https://inspecode.rocro.com/badges/github.com/s520/ATCFS/report?token=ZDO_P6vfadA1TNYuuEyABsMakP1R4Mh0oUsMbLrFgQo&branch=master)](https://inspecode.rocro.com/reports/github.com/s520/ATCFS/branch/master/summary)
 
 ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATC, ATS-P Plugin for BVE5 / OpenBVE On Windows
 
