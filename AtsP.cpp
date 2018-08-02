@@ -273,14 +273,14 @@ void Atsp::PatternP::DelPattern(int type) {
 /// <summary>
 /// 勾配補正設定を行う関数
 /// </summary>
-/// <param name="decleration">減速度補正値[m/s^2]*1000</param>
-void Atsp::AdjDeceleration(int decleration) {
-    if (decleration > 0) {
+/// <param name="deceleration">減速度補正値[m/s^2]*1000</param>
+void Atsp::AdjDeceleration(int deceleration) {
+    if (deceleration > 0) {
         adj_deceleration_ = 0.0;
-    } else if (decleration < -35) {
+    } else if (deceleration < -35) {
         adj_deceleration_ = -0.035;
     } else {
-        adj_deceleration_ = decleration / 1000.0;
+        adj_deceleration_ = deceleration / 1000.0;
     }
     SetPatternList();
 }
@@ -326,7 +326,13 @@ void Atsp::ValidPattern(int& tget_spd, int pattern_status) {
 int Atsp::CalcPatternSpd(int tget_spd, float pattern_end_loc) {
     int pattern_spd = 0;
     if (pattern_end_loc <= Location) {
-        if (tget_spd > atsp_max_spd_) { pattern_spd = atsp_max_spd_; } else if (tget_spd < 0) { pattern_spd = 0; } else { pattern_spd = tget_spd; }
+        if (tget_spd > atsp_max_spd_) {
+            pattern_spd = atsp_max_spd_;
+        } else if (tget_spd < 0) {
+            pattern_spd = 0;
+        } else {
+            pattern_spd = tget_spd;
+        }
     } else {
         pattern_spd = SearchPattern(static_cast<float>(VectorGetOrDefault(pattern_list_, tget_spd, LOGARGS) + pattern_end_loc - Location));
     }

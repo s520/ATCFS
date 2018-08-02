@@ -35,7 +35,7 @@
 #define WIPER_H_
 
 class Wiper {
- private:
+  private:
     int next_wiper_sw_sound_;
     int wiper_timer_;
     int wiper_direction_;
@@ -43,7 +43,7 @@ class Wiper {
     bool wiper_held_;
     int next_wiper_sound_;
 
- public:
+  public:
     int wiper_speed_;
     int wiper_sw_sound_;
     int wiper_current_position_;

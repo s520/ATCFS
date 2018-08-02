@@ -148,9 +148,15 @@ void Sub::DisplayCurrent() {
 /// </summary>
 void Sub::DisplayReverser() {
     switch (*Reverser) {
-    case -1: reverser_postion_ = 2; break;
-    case 1: reverser_postion_ = 1; break;
-    default: reverser_postion_ = 0; break;
+    case -1:
+        reverser_position_ = 2;
+        break;
+    case 1:
+        reverser_position_ = 1;
+        break;
+    default:
+        reverser_position_ = 0;
+        break;
     }
 }
 

@@ -31,7 +31,7 @@
 /// テンプレートを記述する基底クラス
 /// </summary>
 class Base {
- protected:
+  protected:
     /// <summary>
     /// vectorコンテナへの範囲外アクセス時にデフォルト値を返す関数
     /// </summary>
@@ -57,7 +57,7 @@ class Base {
                 return v[index];
             }
         } else {
-            sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (Tihs Vector is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
+            sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (This Vector is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
             OutputDebugString(debugstr);
             return static_cast<T>(0.0);
         }
@@ -88,7 +88,7 @@ class Base {
                 return a[index];
             }
         } else {
-            sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (Tihs Array is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
+            sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (This Array is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
             OutputDebugString(debugstr);
             return static_cast<T>(0.0);
         }
@@ -98,8 +98,7 @@ class Base {
     T VectorTryGet(const boost::container::vector<T> &v, int index, char* file, char* func, int line) {
         try {
             return v.at(index);
-        }
-        catch (std::out_of_range) {
+        } catch (std::out_of_range) {
             char debugstr[1000];
             if (!v.empty()) {
                 if (index < 0) {
@@ -110,7 +109,7 @@ class Base {
                     OutputDebugString(debugstr);
                 }
             } else {
-                sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (Tihs Vector is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
+                sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (This Vector is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
                 OutputDebugString(debugstr);
             }
             throw;
@@ -121,8 +120,7 @@ class Base {
     T ArrayTryGet(const boost::array<T, N> &a, int index, char* file, char* func, int line) {
         try {
             return a.at(index);
-        }
-        catch (std::out_of_range) {
+        } catch (std::out_of_range) {
             char debugstr[1000];
             if (!a.empty()) {
                 if (index < 0) {
@@ -133,7 +131,7 @@ class Base {
                     OutputDebugString(debugstr);
                 }
             } else {
-                sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (Tihs Array is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
+                sprintf_s(debugstr, sizeof(debugstr), "Out of Renge!!! (This Array is Empty) at File: %s / Func: %s / Line: %d\n", file, func, line);
                 OutputDebugString(debugstr);
             }
             throw;

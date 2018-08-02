@@ -21,8 +21,8 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef ATCNS_H_
-#define ATCNS_H_
+#ifndef ATC_H_
+#define ATC_H_
 #include <boost/container/vector.hpp>
 #include <boost/array.hpp>
 #include <boost/scoped_ptr.hpp>
@@ -39,7 +39,7 @@
 /// ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATCを再現するクラス
 /// </summary>
 class Atc :private Base {
- private:
+  private:
     int max_brake_notch_;  //!< 常用最大ブレーキノッチ(HBを含まない)
     int brake_notch_;  //!< 出力ブレーキノッチ(HBを含まない)
     boost::array<int, BRAKE_STEP>default_notch_;  //!< 標準ブレーキノッチ
@@ -88,10 +88,10 @@ class Atc :private Base {
     /// ATC-1, ATC-2を再現するクラス
     /// </summary>
     class AtcA {
-     private:
+      private:
         const Atc *atc_;  //!< Atcクラスのオブジェクトを格納するポインタ
 
-     public:
+      public:
         int signal_;  //!< 車内信号の信号インデックス
         int is_stop_eb_;  //!< ATC-02, 03信号ブレーキフラグ
         int is_stop_svc_;  //!< ATC-30信号ブレーキフラグ
@@ -109,11 +109,11 @@ class Atc :private Base {
     /// ATC-NS, KS-ATC, DS-ATCを再現するクラス
     /// </summary>
     class AtcD {
-     private:
+      private:
         const Atc *atc_;  //!< Atcクラスのオブジェクトを格納するポインタ
         float prev_spd_;  //!< 1フレーム前の列車速度[km/h]
 
-     public:
+      public:
         int is_stop_eb_;  //!< ATC-02, 03信号ブレーキフラグ
         int is_stop_svc_;  //!< ATC-30信号ブレーキフラグ
         int is__brake_reset_;  //!< ブレーキ開放フラグ
@@ -137,12 +137,12 @@ class Atc :private Base {
         /// 停止信号パターン関連を記述するクラス
         /// </summary>
         class SectionD :private Base {
-         private:
+          private:
             const Atc *atc_;  //!< Atcクラスのオブジェクトを格納するポインタ
             double prev_loc_;  //! 以前の列車位置[m]
             boost::container::vector<float>section_loc_list_;  //!< 閉塞境界位置[m]リスト
 
-         public:
+          public:
             int track_path_;  //!< 開通区間数
             float red_signal_loc_;  //!< 停止信号地点[m]
 
@@ -158,12 +158,12 @@ class Atc :private Base {
         /// 駅停車パターン関連を記述するクラス
         /// </summary>
         class StationD {
-         private:
+          private:
             const Atc *atc_;  //!< Atcクラスのオブジェクトを格納するポインタ
             int is_stop_sta_;  //!< 駅停車後方許容地点フラグ
             boost::array<int, STA_PATTERN>pattern_is_ready_;  //!< 駅への停車開始判定フラグ
 
-         public:
+          public:
             boost::array<float, STA_PATTERN>pattern_end_loc_;  //!< 減速完了地点[m]
             boost::array<int, STA_PATTERN>pattern_is_valid_;  //!< パターンの状態(0: 無効, 1: 有効)
             boost::array<int, STA_PATTERN>pattern_tget_spd_;  //!< 目標速度[km/h]
@@ -184,10 +184,10 @@ class Atc :private Base {
         /// 制限速度パターン関連を記述するクラス
         /// </summary>
         class PatternD {
-         private:
+          private:
             const Atc *atc_;  //!< Atcクラスのオブジェクトを格納するポインタ
 
-         public:
+          public:
             boost::array<float, USR_PATTERN>pattern_end_loc_;  //!< 減速完了地点[m]
             boost::array<int, USR_PATTERN>pattern_is_valid_;  //!< パターンの状態(0: 無効, 1: 有効)
             boost::array<int, USR_PATTERN>pattern_tget_spd_;  //!< 目標速度[km/h]
@@ -208,7 +208,7 @@ class Atc :private Base {
     /// 予見Fuzzy制御を再現するクラス
     /// </summary>
     class Fuzzy :private Base {
-     private:
+      private:
         const Atc *atc_;  //!< Atcクラスのオブジェクトを格納するポインタ
         int prev_brake_notch_;  //!< 以前の出力ブレーキノッチ(HBを含まない)
         int adj_timer_;  //!< 減速度補正を行う次のゲーム内時刻[ms]
@@ -230,7 +230,7 @@ class Atc :private Base {
         float FuzzyFuncQ(float x, float a, float b);
         float FuzzyEstLoc(int tget_spd, int notch_num);
 
-     public:
+      public:
         float adj_deceleration_;  //!< 各ブレーキノッチの減速度補正値[m/s^2]
         boost::array<int, ALL_PATTERN>fuzzy_step_;  //!< 全パターンの予見Fuzzy制御の制御段階
         boost::array<int, ALL_PATTERN>brake_timer_;  //!< 全パターンの予見Fuzzy制御を実行する次のゲーム内時刻[ms]
@@ -250,7 +250,7 @@ class Atc :private Base {
     boost::scoped_ptr<AtcD>atc_d_;
     boost::scoped_ptr<Fuzzy>fuzzy_;
 
- public:
+  public:
     int ServiceNotch;  //!< 常用最大ブレーキノッチ(HBを含む)
     int AtsNotch;  //!< ATS確認ノッチ(B1)
     const float *TrainSpeed;  //!< 列車速度[km/h]
@@ -304,4 +304,4 @@ class Atc :private Base {
     void ExeNS(void);
 };
 
-#endif  // ATCNS_H_
+#endif  // ATC_H_

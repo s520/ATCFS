@@ -1,0 +1,23 @@
+﻿inspecode:
+  experimental:
+    ignore:
+      - AtcfsCfg.h
+      - atsplugin.h
+      - resource.h
+      - stdafx.cpp
+      - stdafx.h
+
+  astyle:
+    auto-fix: true
+    options:
+      --style: google
+      --mode: c
+      --indent-namespaces:
+      --keep-one-line-blocks:
+
+  cppcheck:
+    options:
+      --enable: all
+      --suppress: uninitMemberVar
+
+  misspell: default

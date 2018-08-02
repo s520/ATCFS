@@ -248,7 +248,11 @@ int Atc::SearchSignal(int spd) {
 int Atc::ItoV(int index) {
     int atc_spd = ArrayGetOrDefault(atc_spd_list_, index, LOGARGS);
     if (atc_type_ == 0 && atc_spd >= 220) {
-        if (atc_spd >= 300) { atc_spd += 3; } else { atc_spd += 5; }
+        if (atc_spd >= 300) {
+            atc_spd += 3;
+        } else {
+            atc_spd += 5;
+        }
     }
     return atc_spd;
 }
@@ -263,7 +267,11 @@ int Atc::ItoV(int index) {
 int Atc::ItoV(int index, bool is_display) {
     int atc_spd = ArrayGetOrDefault(atc_spd_list_, index, LOGARGS);
     if (atc_type_ == 0 && atc_spd >= 220 && !is_display) {
-        if (atc_spd >= 300) { atc_spd += 3; } else { atc_spd += 5; }
+        if (atc_spd >= 300) {
+            atc_spd += 3;
+        } else {
+            atc_spd += 5;
+        }
     }
     return atc_spd;
 }
@@ -319,7 +327,11 @@ void Atc::ExitNS() {
 /// <param name="signal">現在のセクションの信号番号</param>
 void Atc::ChangedSignalNS(int signal) {
     if (atc_use_ == 1) {
-        if (atc_type_ < 2) { atc_a_->ChangedSignal(signal); } else { atc_d_->ChangedSignal(signal); }
+        if (atc_type_ < 2) {
+            atc_a_->ChangedSignal(signal);
+        } else {
+            atc_d_->ChangedSignal(signal);
+        }
     }
 }
 
@@ -340,10 +352,10 @@ void Atc::AtcA::ChangedSignal(int signal) {
         if (signal > atc_->max_signal_) { signal = atc_->max_signal_; }
 
         // ATC-02, 03信号ブレーキフラグOFF
-        if (signal != 0 && signal_ == 0) { is_stop_eb_ = 0; }
+        if (signal != 0) { is_stop_eb_ = 0; }
 
         // ATC-30信号ブレーキフラグOFF
-        if (signal != 1 && signal_ == 1) { is_stop_svc_ = 0; }
+        if (signal != 1) { is_stop_svc_ = 0; }
 
         // ATC-02信号ブレーキフラグON & ブレーキ開放フラグOFF
         if (signal == 0 && signal_ != 0) {
@@ -428,14 +440,11 @@ void Atc::PassedBeaconNS(int index, int signal, float distance, int optional) {
 /// <param name="atc_type">ATC方式</param>
 void Atc::ChangedAtcType(int atc_type) {
     if (atc_type != atc_type_ && atc_type < 5) {
-        // デジタルATCからアナログATCへの切り替え
-        if (atc_type < 2 && atc_type_ > 1) {
+        if (atc_type < 2 && atc_type_ > 1) {  // デジタルATCからアナログATCへの切り替え
             atc_a_->signal_ = atc_d_->section_d_->track_path_;
             atc_a_->next_atc_ding_ = atc_d_->next_atc_ding_;
             atc_d_->Init();
-
-        // アナログATCからデジタルATCへの切り替え
-        } else if (atc_type > 1 && atc_type_ < 2) {
+        } else if (atc_type > 1 && atc_type_ < 2) {  // アナログATCからデジタルATCへの切り替え
             atc_d_->section_d_->track_path_ = atc_a_->signal_;
             atc_d_->next_atc_ding_ = atc_a_->next_atc_ding_;
             atc_a_->Init();
@@ -451,8 +460,7 @@ void Atc::ChangedAtcType(int atc_type) {
 /// <param name="signal">対となるセクションの信号番号</param>
 void Atc::PassedLoop(int signal) {
     if (atc_use_ == 1) {
-        // ATC-03信号ブレーキフラグON & ブレーキ開放フラグOFF
-        if (signal == 0) {
+        if (signal == 0) {  // ATC-03信号ブレーキフラグON & ブレーキ開放フラグOFF
             if (atc_type_ < 2 && atc_a_->is_stop_eb_ != 1) {
                 atc_a_->is_stop_eb_ = 1;
                 atc_a_->is__brake_reset_ = 0;
@@ -463,9 +471,7 @@ void Atc::PassedLoop(int signal) {
                 atc_d_->is__brake_reset_ = 0;
                 atc_d_->next_atc_ding_ = ATS_SOUND_PLAY;  // ATCベル
             }
-
-        // ATC-03信号ブレーキフラグOFF
-        } else {
+        } else {  // ATC-03信号ブレーキフラグOFF
             if (atc_type_ == 2 && atc_d_->is_stop_eb_ == 1) {
                 atc_d_->is_stop_eb_ = 0;
             }
@@ -479,13 +485,10 @@ void Atc::PassedLoop(int signal) {
 /// <remarks>車内信号がATC-30かつ列車速度が30km/h以上から以下へ変化した場合にONになる</remarks>
 void Atc::AtcD::AtcCheck() {
     if (atc_->atc_type_ == 2) {
-        // ATC-30信号ブレーキフラグON & ブレーキ開放フラグOFF
-        if (tget_signal_ == 1 && abs(*atc_->TrainSpeed) <= 30.0f && prev_spd_ > 30.0f) {
+        if (tget_signal_ == 1 && abs(*atc_->TrainSpeed) <= 30.0f && prev_spd_ > 30.0f) {  // ATC-30信号ブレーキフラグON & ブレーキ開放フラグOFF
             is_stop_svc_ = 1;
             is__brake_reset_ = 0;
-
-        // ATC-30信号ブレーキフラグOFF
-        } else if (abs(*atc_->TrainSpeed) > 30.0f && prev_spd_ <= 30.0f) {
+        } else if (abs(*atc_->TrainSpeed) > 30.0f && prev_spd_ <= 30.0f) {  // ATC-30信号ブレーキフラグOFF
             is_stop_svc_ = 0;
         }
     }
@@ -584,10 +587,17 @@ void Atc::AtcD::StationD::RegStaBranch(int distance) {
 void Atc::AtcD::StationD::RegStaManual(int distance) {
     boost::get<1>(pattern_end_loc_) = static_cast<float>(atc_->Location + distance);
     switch (atc_->atc_type_) {
-    case 2: boost::get<1>(pattern_tget_spd_) = 30; break;
-    case 3: boost::get<1>(pattern_tget_spd_) = 15; break;
-    case 4: boost::get<1>(pattern_tget_spd_) = 75; break;
-    default: break;
+    case 2:
+        boost::get<1>(pattern_tget_spd_) = 30;
+        break;
+    case 3:
+        boost::get<1>(pattern_tget_spd_) = 15;
+        break;
+    case 4:
+        boost::get<1>(pattern_tget_spd_) = 75;
+        break;
+    default:
+        break;
     }
     boost::get<1>(pattern_is_valid_) = (boost::get<1>(pattern_is_ready_) == 1) ? 1 : 0;
 }
@@ -682,7 +692,13 @@ void Atc::ValidPattern(int& tget_spd, int pattern_status) {
 int Atc::CalcPatternSpd(int tget_spd, float pattern_end_loc) {
     int arrow_spd = 0;
     if (pattern_end_loc <= Location) {
-        if (tget_spd > atc_max_spd_) { arrow_spd = atc_max_spd_; } else if (tget_spd < 0) { arrow_spd = 0; } else { arrow_spd = tget_spd; }
+        if (tget_spd > atc_max_spd_) {
+            arrow_spd = atc_max_spd_;
+        } else if (tget_spd < 0) {
+            arrow_spd = 0;
+        } else {
+            arrow_spd = tget_spd;
+        }
     } else {
         arrow_spd = SearchPattern(static_cast<float>(VectorGetOrDefault(pattern_list_, tget_spd, LOGARGS) + pattern_end_loc - Location));
     }

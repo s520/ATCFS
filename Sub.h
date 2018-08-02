@@ -21,15 +21,15 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef SUB2_H_
-#define SUB2_H_
+#ifndef SUB_H_
+#define SUB_H_
 #include <boost/array.hpp>
 
 /// <summary>
 /// その他機能を再現するクラス
 /// </summary>
 class Sub {
- private:
+  private:
     int brake_status_;  //!< ATCブレーキの状態(0: 緩解, 1: 作動)
     int prev_brake_status_;  //!< 1フレーム前のATCブレーキの状態(0: 緩解, 1: 作動)
     int next_atc_air_sound_;  //!< 1フレーム後のATCブレーキの緩解音の状態
@@ -46,7 +46,7 @@ class Sub {
     void RunSpeedometer(void);
     void PlaySound(void);
 
- public:
+  public:
     const float *TrainSpeed;  //!< 列車速度[km/h]
     const int *Time;  //!< ゲーム内時刻[ms]
     const int *Reverser;  //!< レバーサー位置(-1: 後, 0: 中立, 1: 前)
@@ -57,7 +57,7 @@ class Sub {
     int ac_voltage_;  //!< 交流電圧
     int cv_voltage_;  //!< 制御電圧
     int atc_air_sound_;  //!< ATCブレーキの緩解音の状態
-    int reverser_postion_;  //!< レバーサー位置(0: 中立, 1: 前, 2: 後)
+    int reverser_position_;  //!< レバーサー位置(0: 中立, 1: 前, 2: 後)
     int lcd_sw_;  //!< LCD切り替えSWの状態(0: 開放, 1: 押下)
     int lcd_status_;  //!< LCDの状態(0: 表示1, 1: 表示2)
     int lcd_sw_down_sound_;  //!< LCD切り替えSWの押下音の状態
@@ -81,4 +81,4 @@ class Sub {
     void Exe(void);
 };
 
-#endif  // SUB2_H_
+#endif  // SUB_H_

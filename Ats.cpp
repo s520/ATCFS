@@ -272,7 +272,7 @@ ATS_API ATS_HANDLES WINAPI Elapse(ATS_VEHICLESTATE vehicleState, int *panel, int
     panel[192] = (g_atc.atc_type_ == 1 || g_atc.atc_type_ == 4) ? boost::get<11>(g_atc.atc_sig_indicator_) : 0;  // 東北, 上越: ATC-360
 
     // その他の機能
-    panel[32] = g_sub.reverser_postion_;  // レバーサ表示
+    panel[32] = g_sub.reverser_position_;  // レバーサ表示
     panel[61] = g_sub.lcd_status_;  // LCD表示
     panel[62] = g_sub.light_status_;  // 手元灯
     //panel[192] = g_wiper.wiper_speed_;

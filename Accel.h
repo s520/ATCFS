@@ -28,7 +28,7 @@
 /// 列車の加速度を算出するクラス
 /// </summary>
 class Accel {
- private:
+  private:
     float prev_spd_;  //!< 1フレーム前の列車速度[km/h]
     int prev_time_;  //!< 1フレーム前のゲーム内時刻[ms]
     float prev_raw_accel_;  //!< 1フレーム前の生の加速度[km/h/s]
@@ -37,7 +37,7 @@ class Accel {
     void CalcRawAccel(void);
     void CalcEmaAccel(void);
 
- public:
+  public:
     const float *TrainSpeed;  //!< 列車速度[km/h]
     const int *Time;  //!< ゲーム内時刻[ms]
     float raw_accel_;  //!< 生の加速度[km/h/s]

@@ -21,8 +21,8 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef ATSNS_H_
-#define ATSNS_H_
+#ifndef ATSP_H_
+#define ATSP_H_
 #include <boost/container/vector.hpp>
 #include <boost/array.hpp>
 #include <boost/scoped_ptr.hpp>
@@ -36,7 +36,7 @@
 /// ATS-Pを再現するクラス
 /// </summary>
 class Atsp :private Base {
- private:
+  private:
     int max_brake_notch_;  //!< 常用最大ブレーキノッチ(HBを含まない)
     int default_notch_;  //!< 標準ブレーキノッチ
     boost::container::vector<double>pattern_list_;  //!< 速度照査パターン
@@ -51,7 +51,7 @@ class Atsp :private Base {
     int debug_timer_;  //!< Debug出力する次のゲーム内時刻[ms]
 
     void SetPatternList(void);
-    void AdjDeceleration(int decleration);
+    void AdjDeceleration(int deceleration);
     int SearchPattern(float distance);
     void ValidPattern(int& tget_spd, int pattern_status);
     int CalcPatternSpd(int tget_spd, float pattern_end_loc);
@@ -70,11 +70,11 @@ class Atsp :private Base {
     /// 停止信号パターン関連を記述するクラス
     /// </summary>
     class SectionP {
-     private:
+      private:
         const Atsp *atsp_;  //!< Atspクラスのオブジェクトを格納するポインタ
         float red_signal_loc_;  //!< 停止信号地点[m]
 
-     public:
+      public:
         int is_immediate_stop_eb_;  //!< 即時停止(非常)フラグ
         int is_immediate_stop_svc_;  //!< 即時停止(常用)フラグ
         int is_immediate_stop_;  //!< 即時停止(非常, 常用)フラグ
@@ -98,10 +98,10 @@ class Atsp :private Base {
     /// 制限速度パターン関連を記述するクラス
     /// </summary>
     class PatternP {
-     private:
+      private:
         const Atsp *atsp_;  //!< Atspクラスのオブジェクトを格納するポインタ
 
-     public:
+      public:
         boost::array<float, USR_PATTERN_P>pattern_end_loc_;  //!< 減速完了地点[m]
         boost::array<int, USR_PATTERN_P>pattern_is_valid_;  //!< パターンの状態(0: 無効, 1: 有効)
         boost::array<int, USR_PATTERN_P>pattern_tget_spd_;  //!< 目標速度[km/h]
@@ -116,7 +116,7 @@ class Atsp :private Base {
     boost::scoped_ptr<SectionP>section_p_;
     boost::scoped_ptr<PatternP>pattern_p_;
 
- public:
+  public:
     int EmergencyNotch;  //!< 非常ブレーキノッチ(HBを含む)
     int ServiceNotch;  //!< 常用最大ブレーキノッチ(HBを含む)
     int AtsNotch;  //!< ATS確認ノッチ(B1)
@@ -145,4 +145,4 @@ class Atsp :private Base {
     void ExeP(void);
 };
 
-#endif  // ATSNS_H_
+#endif  // ATSP_H_
