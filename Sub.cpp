@@ -118,6 +118,18 @@ void Sub::DisplayClock() {
 }
 
 /// <summary>
+/// アナログ時計を表示する関数
+/// </summary>
+void Sub::DisplayAnalogClock() {
+    int hour = *Time / 3600;
+    int min = (*Time / 60) % 60000;
+    int sec = *Time % 60000;
+    boost::get<0>(analog_clock_) = (hour >= 12000) ? hour - 12000 : hour;
+    boost::get<1>(analog_clock_) = min;
+    boost::get<2>(analog_clock_) = sec;
+}
+
+/// <summary>
 /// 1桁ごと分割された電流値を出力する関数
 /// </summary>
 void Sub::DisplayCurrent() {
@@ -206,6 +218,7 @@ void Sub::PlaySound() {
 void Sub::Exe() {
     PlayAtcAirSound();
     DisplayClock();
+    DisplayAnalogClock();
     DisplayCurrent();
     DisplayReverser();
     ResetSpeedometer();

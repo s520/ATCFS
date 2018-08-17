@@ -275,6 +275,9 @@ ATS_API ATS_HANDLES WINAPI Elapse(ATS_VEHICLESTATE vehicleState, int *panel, int
     panel[32] = g_sub.reverser_position_;  // レバーサ表示
     panel[61] = g_sub.lcd_status_;  // LCD表示
     panel[62] = g_sub.light_status_;  // 手元灯
+    panel[63] = boost::get<0>(g_sub.analog_clock_);  // アナログ時計 (時 * 1000)
+    panel[64] = boost::get<1>(g_sub.analog_clock_);  // アナログ時計 (分 * 1000)
+    panel[65] = boost::get<2>(g_sub.analog_clock_);  // アナログ時計 (秒 * 1000)
     //panel[192] = g_wiper.wiper_speed_;
     panel[193] = g_wiper.wiper_current_position_;  // ワイパー
     panel[194] = (static_cast<int>(g_atc.Location + g_sub.adj_loc_) % 1000000) / 100000;  // 距離程100kmの位
@@ -337,8 +340,8 @@ ATS_API ATS_HANDLES WINAPI Elapse(ATS_VEHICLESTATE vehicleState, int *panel, int
     sound[2] = g_atsp.atsp_ding_;  // ATS-Pベル
     sound[6] = g_wiper.wiper_sw_sound_;  // ワイパーON, OFFの速度調節スイッチ
     sound[7] = g_atc.atc_ding_;  // ATCベル
-    sound[8] = g_atc.reset_sw_down_sound_;  // ATC確認ボタンの開放音
-    sound[9] = g_atc.reset_sw_up_sound_;  // ATC確認ボタンの押下音
+    sound[8] = g_atc.reset_sw_up_sound_;  // ATC確認ボタンの開放音
+    sound[9] = g_atc.reset_sw_down_sound_;  // ATC確認ボタンの押下音
     sound[10] = g_sub.atc_air_sound_;  // ATCブレーキ緩解音
     sound[17] = (g_ini.Wiper.WiperWet == 0) ? g_wiper.wiper_sound_ : ATS_SOUND_STOP;  // ワイパー動作サウンド (空動作の時)
     sound[18] = (g_ini.Wiper.WiperWet != 0) ? g_wiper.wiper_sound_ : ATS_SOUND_STOP;  // ワイパー動作サウンド (降雨時)

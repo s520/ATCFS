@@ -40,6 +40,7 @@ class Sub {
 
     void PlayAtcAirSound(void);
     void DisplayClock(void);
+    void DisplayAnalogClock(void);
     void DisplayCurrent(void);
     void DisplayReverser(void);
     void ResetSpeedometer(void);
@@ -67,6 +68,7 @@ class Sub {
     int light_sw_down_sound_;  //!< 手元灯SWの押下音の状態
     int light_sw_up_sound_;  //!< 手元灯SWの開放音の状態
     boost::array<int, 6>digital_clock_;  //!< 1桁ごと表示するデジタル時計
+    boost::array<int, 3>analog_clock_;  //!< アナログ時計
     boost::array<int, 28>speedometer_;  //!< 10km/h刻みの0系/200系用速度計の針
     int adj_loc_;  //!< 距離表示に加算する補正値[m]
 

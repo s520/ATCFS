@@ -1234,7 +1234,7 @@ void Atc::PlaySound() {
     next_reset_sw_down_sound_ = ATS_SOUND_CONTINUE;
 
     reset_sw_up_sound_ = next_reset_sw_up_sound_;
-    next_reset_sw_down_sound_ = ATS_SOUND_CONTINUE;
+    next_reset_sw_up_sound_ = ATS_SOUND_CONTINUE;
 }
 
 /// <summary>
