@@ -1,0 +1,10 @@
+<map id="Atsp::SetPatternList" name="Atsp::SetPatternList">
+<area shape="rect" id="node2" href="$class_atsp.html#a39207dad3d8d801eba6cbe3fbc9e830b" title="Initializeで実行する関数 " alt="" coords="227,69,311,96"/>
+<area shape="rect" id="node6" href="$class_atsp.html#a63fb294dfe04cb7c77cc3e5e4389fe0e" title="勾配補正設定を行う関数 " alt="" coords="195,145,344,172"/>
+<area shape="rect" id="node3" href="$atsplugin_8h.html#ae77df478d1817d333027d18debc58e0d" title="ゲーム開始時に呼び出される関数 " alt="" coords="417,5,521,32"/>
+<area shape="rect" id="node4" href="$class_atsp.html#a311b99802de46997f76054ec6ec3324e" title="ATS&#45;Pを投入する際に実行する関数 " alt="" coords="422,56,517,83"/>
+<area shape="rect" id="node5" href="$class_atsp.html#ac711cdf20290bb5b661431a0c34b8378" title="ATS&#45;Pを遮断する際に実行する関数 " alt="" coords="425,107,514,133"/>
+<area shape="rect" id="node7" href="$class_atsp.html#afbd20ef5e15ff528693452c9031ea9f0" title="SetBeaconDataで実行される関数 " alt="" coords="392,157,547,184"/>
+<area shape="rect" id="node8" href="$_ats_8h.html#a6a2eabd75b7f5b29cff27778aa8b7377" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="595,157,706,184"/>
+<area shape="rect" id="node9" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="755,157,818,184"/>
+</map>

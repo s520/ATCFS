@@ -1,0 +1,14 @@
+<map id="Base::VectorGetOrDefault" name="Base::VectorGetOrDefault">
+<area shape="rect" id="node2" href="$class_atc_1_1_atc_d_1_1_section_d.html#abedb039494195c6e6711b5aa36fb3cd7" title="停止位置を算出する関数 " alt="" coords="243,5,386,46"/>
+<area shape="rect" id="node3" href="$class_atc.html#a653c0a64e85a2a6d6978d9bcb140c79c" title="パターン照査速度を算出する関数 " alt="" coords="243,71,386,97"/>
+<area shape="rect" id="node7" href="$class_atc.html#a994149818da128f97bf49daad8d1163f" title="パターン降下開始地点を算出する関数 " alt="" coords="245,121,385,148"/>
+<area shape="rect" id="node8" href="$class_atc.html#ab2a7d3d46010d27ec599008784ff274b" title="デジタルATC用車内信号を生成する関数 " alt="" coords="449,172,621,199"/>
+<area shape="rect" id="node9" href="$class_atc_1_1_fuzzy.html#a0dd621a5177ef2e29475b2e460e4398d" title="予見Fuzzy制御を行う関数 " alt="" coords="229,223,400,249"/>
+<area shape="rect" id="node10" href="$class_atsp.html#ac3cc1ab507ba835b681331700fe0fa56" title="パターン照査速度を算出する関数 " alt="" coords="240,273,389,300"/>
+<area shape="rect" id="node4" href="$class_atc.html#a83e7b49b2925740ffb1b5849b3ca16e7" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="475,121,594,148"/>
+<area shape="rect" id="node5" href="$class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="687,172,779,199"/>
+<area shape="rect" id="node6" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="985,197,1047,224"/>
+<area shape="rect" id="node11" href="$class_atsp.html#ad02bdc39309234956d363980e6d252e0" title="パターン接近警報を発信する関数 " alt="" coords="463,223,607,249"/>
+<area shape="rect" id="node12" href="$class_atsp.html#af767ce5a679f1f3dcdf707266d5aef56" title="各パターン情報からパターン照査速度を算出し、パターン接近警報の状態を取得する関数 " alt="" coords="670,223,797,249"/>
+<area shape="rect" id="node13" href="$class_atsp.html#acd0d2d705b729542c4aa2d8d924e351c" title="Elapseで実行する関数 " alt="" coords="846,223,935,249"/>
+</map>

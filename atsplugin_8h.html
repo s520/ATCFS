@@ -1,0 +1,1030 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS: atsplugin.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">atsplugin.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="atsplugin_8h__dep__incl.png" border="0" usemap="#atsplugin_8hdep" alt=""/></div>
+<map name="atsplugin_8hdep" id="atsplugin_8hdep">
+<area shape="rect" id="node2" href="_atc_8cpp.html" title="Atc.cpp" alt="" coords="5,80,72,107"/><area shape="rect" id="node3" href="_ats_8cpp.html" title="Ats.cpp" alt="" coords="96,80,163,107"/><area shape="rect" id="node4" href="_ats_p_8cpp.html" title="AtsP.cpp" alt="" coords="187,80,263,107"/><area shape="rect" id="node5" href="_sub_8cpp.html" title="Sub.cpp" alt="" coords="287,80,357,107"/><area shape="rect" id="node6" href="_wiper_8cpp.html" title="Wiper.cpp" alt="" coords="382,80,463,107"/></map>
+</div>
+</div>
+<p><a href="atsplugin_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_p_e_c.html">ATS_VEHICLESPEC</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_t_a_t_e.html">ATS_VEHICLESTATE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_t_s___b_e_a_c_o_n_d_a_t_a.html">ATS_BEACONDATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_t_s___h_a_n_d_l_e_s.html">ATS_HANDLES</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a2cf22746029f59244a1459adfc189cb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a>&#160;&#160;&#160;__declspec(dllimport)</td></tr>
+<tr class="separator:a2cf22746029f59244a1459adfc189cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac8886a81fc914ba3ce3b8dfda31114"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a8ac8886a81fc914ba3ce3b8dfda31114">ATS_VERSION</a>&#160;&#160;&#160;0x00020000</td></tr>
+<tr class="separator:a8ac8886a81fc914ba3ce3b8dfda31114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02edd0936b0c58844a0505c75f62659c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a02edd0936b0c58844a0505c75f62659c">ATS_KEY_S</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a02edd0936b0c58844a0505c75f62659c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401ec81a632876ea32ea4658b72ccc26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a401ec81a632876ea32ea4658b72ccc26">ATS_KEY_A1</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a401ec81a632876ea32ea4658b72ccc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7a72991d435f1103772fe2bca5627a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a9f7a72991d435f1103772fe2bca5627a">ATS_KEY_A2</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a9f7a72991d435f1103772fe2bca5627a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a042d884fb7585bee2a35be29f590a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#ae8a042d884fb7585bee2a35be29f590a">ATS_KEY_B1</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ae8a042d884fb7585bee2a35be29f590a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa706b03b28853477b49665fe8937a439"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#aa706b03b28853477b49665fe8937a439">ATS_KEY_B2</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:aa706b03b28853477b49665fe8937a439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f26b85d070b8419ff50efe84a08602e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a8f26b85d070b8419ff50efe84a08602e">ATS_KEY_C1</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a8f26b85d070b8419ff50efe84a08602e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09266fe5c32a7c352a6fd37936a4956e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a09266fe5c32a7c352a6fd37936a4956e">ATS_KEY_C2</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a09266fe5c32a7c352a6fd37936a4956e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee15acf506142b6eb7f4ee5866c32211"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#aee15acf506142b6eb7f4ee5866c32211">ATS_KEY_D</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:aee15acf506142b6eb7f4ee5866c32211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2798fea09edc9585baebaac0c7fb2f32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a2798fea09edc9585baebaac0c7fb2f32">ATS_KEY_E</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a2798fea09edc9585baebaac0c7fb2f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b18d22e489e5ab725cdad569bb1b6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a50b18d22e489e5ab725cdad569bb1b6a">ATS_KEY_F</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a50b18d22e489e5ab725cdad569bb1b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5754f1d0cb1aa608663b27f20e2c06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a3c5754f1d0cb1aa608663b27f20e2c06">ATS_KEY_G</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a3c5754f1d0cb1aa608663b27f20e2c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e45a2ad4ed879f444cd4a28eca75db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a49e45a2ad4ed879f444cd4a28eca75db">ATS_KEY_H</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:a49e45a2ad4ed879f444cd4a28eca75db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace48dffab4d402c0723c5017ccd9e2a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#ace48dffab4d402c0723c5017ccd9e2a7">ATS_KEY_I</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ace48dffab4d402c0723c5017ccd9e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167c6598a0b45e1abd338a93161decbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a167c6598a0b45e1abd338a93161decbf">ATS_KEY_J</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:a167c6598a0b45e1abd338a93161decbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d3bcf9088c8a0065b8bbad3baddc94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a00d3bcf9088c8a0065b8bbad3baddc94">ATS_KEY_K</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:a00d3bcf9088c8a0065b8bbad3baddc94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844ab7a9296cd6c91ce239d78126acae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a844ab7a9296cd6c91ce239d78126acae">ATS_KEY_L</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a844ab7a9296cd6c91ce239d78126acae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936110b8c0eed289f5aaff15a1ea031b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a936110b8c0eed289f5aaff15a1ea031b">ATS_INIT_REMOVED</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a936110b8c0eed289f5aaff15a1ea031b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4ef47ea58cf64f3e606c9d6bdcb426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a8e4ef47ea58cf64f3e606c9d6bdcb426">ATS_INIT_EMG</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a8e4ef47ea58cf64f3e606c9d6bdcb426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58efe4369509ec56dab0dab96dde7457"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a58efe4369509ec56dab0dab96dde7457">ATS_INIT_SVC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a58efe4369509ec56dab0dab96dde7457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3453ebc22aa8ecc9f3e1a10c3da5af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#aa3453ebc22aa8ecc9f3e1a10c3da5af8">ATS_SOUND_STOP</a>&#160;&#160;&#160;-10000</td></tr>
+<tr class="separator:aa3453ebc22aa8ecc9f3e1a10c3da5af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c24c3a2a9716cfdc6ad4adf61e7da0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#ad6c24c3a2a9716cfdc6ad4adf61e7da0">ATS_SOUND_PLAY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ad6c24c3a2a9716cfdc6ad4adf61e7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c2932f6aff88f040f622a872ac95ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a75c2932f6aff88f040f622a872ac95ba">ATS_SOUND_PLAYLOOPING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a75c2932f6aff88f040f622a872ac95ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb09dc5d7715b22839da29b783cc3b66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#adb09dc5d7715b22839da29b783cc3b66">ATS_SOUND_CONTINUE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:adb09dc5d7715b22839da29b783cc3b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c08689d1a3fd44cbe44ebe12b635ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a03c08689d1a3fd44cbe44ebe12b635ab">ATS_HORN_PRIMARY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a03c08689d1a3fd44cbe44ebe12b635ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b38842cc8f4d5fcbe50e2c09eaf7ef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a8b38842cc8f4d5fcbe50e2c09eaf7ef0">ATS_HORN_SECONDARY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a8b38842cc8f4d5fcbe50e2c09eaf7ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eed9c8c8425c3ee6e5f1a7f20a5888e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a3eed9c8c8425c3ee6e5f1a7f20a5888e">ATS_HORN_MUSIC</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a3eed9c8c8425c3ee6e5f1a7f20a5888e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7922453d539f15d38a4c9993a1ff55c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a7922453d539f15d38a4c9993a1ff55c2">ATS_CONSTANTSPEED_CONTINUE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a7922453d539f15d38a4c9993a1ff55c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f03cfff0a91ca8b992a6d79db3b28ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a8f03cfff0a91ca8b992a6d79db3b28ed">ATS_CONSTANTSPEED_ENABLE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a8f03cfff0a91ca8b992a6d79db3b28ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa9fc2414abdbc1a7fa95823481093a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#adfa9fc2414abdbc1a7fa95823481093a">ATS_CONSTANTSPEED_DISABLE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:adfa9fc2414abdbc1a7fa95823481093a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a671c4d652a03c95a3b206d67829f5825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a671c4d652a03c95a3b206d67829f5825">Load</a> (void)</td></tr>
+<tr class="memdesc:a671c4d652a03c95a3b206d67829f5825"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグインが読み込まれたときに呼び出される関数  <a href="#a671c4d652a03c95a3b206d67829f5825">[詳解]</a><br/></td></tr>
+<tr class="separator:a671c4d652a03c95a3b206d67829f5825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba20290c79e93aeec8bc5c132ec5a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#abba20290c79e93aeec8bc5c132ec5a79">Dispose</a> (void)</td></tr>
+<tr class="memdesc:abba20290c79e93aeec8bc5c132ec5a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグインが解放されたときに呼び出される関数  <a href="#abba20290c79e93aeec8bc5c132ec5a79">[詳解]</a><br/></td></tr>
+<tr class="separator:abba20290c79e93aeec8bc5c132ec5a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b052e0b1997eaf3c0ba2a636912bfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> int WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#aa2b052e0b1997eaf3c0ba2a636912bfe">GetPluginVersion</a> (void)</td></tr>
+<tr class="memdesc:aa2b052e0b1997eaf3c0ba2a636912bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">このATSプラグインが準じているフォーマットを返す関数  <a href="#aa2b052e0b1997eaf3c0ba2a636912bfe">[詳解]</a><br/></td></tr>
+<tr class="separator:aa2b052e0b1997eaf3c0ba2a636912bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7f09a01444ade1606943b74b3bfe95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a1a7f09a01444ade1606943b74b3bfe95">SetVehicleSpec</a> (<a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_p_e_c.html">ATS_VEHICLESPEC</a>)</td></tr>
+<tr class="memdesc:a1a7f09a01444ade1606943b74b3bfe95"><td class="mdescLeft">&#160;</td><td class="mdescRight">車両読み込み時に呼び出される関数  <a href="#a1a7f09a01444ade1606943b74b3bfe95">[詳解]</a><br/></td></tr>
+<tr class="separator:a1a7f09a01444ade1606943b74b3bfe95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77df478d1817d333027d18debc58e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#ae77df478d1817d333027d18debc58e0d">BVE_Initialize</a> (int)</td></tr>
+<tr class="memdesc:ae77df478d1817d333027d18debc58e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム開始時に呼び出される関数  <a href="#ae77df478d1817d333027d18debc58e0d">[詳解]</a><br/></td></tr>
+<tr class="separator:ae77df478d1817d333027d18debc58e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348491d58db3bdcbd9a74fe176626c28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> <a class="el" href="struct_a_t_s___h_a_n_d_l_e_s.html">ATS_HANDLES</a> WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28">Elapse</a> (<a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_t_a_t_e.html">ATS_VEHICLESTATE</a>, int *, int *)</td></tr>
+<tr class="memdesc:a348491d58db3bdcbd9a74fe176626c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームごとに呼び出される関数  <a href="#a348491d58db3bdcbd9a74fe176626c28">[詳解]</a><br/></td></tr>
+<tr class="separator:a348491d58db3bdcbd9a74fe176626c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98a5e73fb0dadc0716a64d5d68fcff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#ab98a5e73fb0dadc0716a64d5d68fcff5">SetPower</a> (int)</td></tr>
+<tr class="memdesc:ab98a5e73fb0dadc0716a64d5d68fcff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">主ハンドルが扱われたときに呼び出される関数  <a href="#ab98a5e73fb0dadc0716a64d5d68fcff5">[詳解]</a><br/></td></tr>
+<tr class="separator:ab98a5e73fb0dadc0716a64d5d68fcff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd630346fd25f36f4ac94ecbfb4d04a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a8cd630346fd25f36f4ac94ecbfb4d04a">SetBrake</a> (int)</td></tr>
+<tr class="memdesc:a8cd630346fd25f36f4ac94ecbfb4d04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキが扱われたときに呼び出される関数  <a href="#a8cd630346fd25f36f4ac94ecbfb4d04a">[詳解]</a><br/></td></tr>
+<tr class="separator:a8cd630346fd25f36f4ac94ecbfb4d04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b91819946b5686b41eaa319db2f8f4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a6b91819946b5686b41eaa319db2f8f4f">SetReverser</a> (int)</td></tr>
+<tr class="memdesc:a6b91819946b5686b41eaa319db2f8f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">レバーサーが扱われたときに呼び出される関数  <a href="#a6b91819946b5686b41eaa319db2f8f4f">[詳解]</a><br/></td></tr>
+<tr class="separator:a6b91819946b5686b41eaa319db2f8f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7ec2bc9a5b646e8ba6754be18ab7d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#aeb7ec2bc9a5b646e8ba6754be18ab7d7">KeyDown</a> (int)</td></tr>
+<tr class="memdesc:aeb7ec2bc9a5b646e8ba6754be18ab7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが押されたときに呼び出される関数  <a href="#aeb7ec2bc9a5b646e8ba6754be18ab7d7">[詳解]</a><br/></td></tr>
+<tr class="separator:aeb7ec2bc9a5b646e8ba6754be18ab7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa626b946b8fba5e7091a306bf56fe9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#affa626b946b8fba5e7091a306bf56fe9">KeyUp</a> (int)</td></tr>
+<tr class="memdesc:affa626b946b8fba5e7091a306bf56fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが離されたときに呼び出される関数  <a href="#affa626b946b8fba5e7091a306bf56fe9">[詳解]</a><br/></td></tr>
+<tr class="separator:affa626b946b8fba5e7091a306bf56fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71385d481765fa9c342e4e29fd566ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a71385d481765fa9c342e4e29fd566ab4">HornBlow</a> (int)</td></tr>
+<tr class="memdesc:a71385d481765fa9c342e4e29fd566ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">警笛が扱われたときに呼び出される関数  <a href="#a71385d481765fa9c342e4e29fd566ab4">[詳解]</a><br/></td></tr>
+<tr class="separator:a71385d481765fa9c342e4e29fd566ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f5b3ebf230bb1f6b1b337f80cee366"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a66f5b3ebf230bb1f6b1b337f80cee366">DoorOpen</a> (void)</td></tr>
+<tr class="memdesc:a66f5b3ebf230bb1f6b1b337f80cee366"><td class="mdescLeft">&#160;</td><td class="mdescRight">客室ドアが開いたときに呼び出される関数  <a href="#a66f5b3ebf230bb1f6b1b337f80cee366">[詳解]</a><br/></td></tr>
+<tr class="separator:a66f5b3ebf230bb1f6b1b337f80cee366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3679ac9f89be713532e8db69c1c39b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a3679ac9f89be713532e8db69c1c39b26">DoorClose</a> (void)</td></tr>
+<tr class="memdesc:a3679ac9f89be713532e8db69c1c39b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">客室ドアが閉まったときに呼び出される関数  <a href="#a3679ac9f89be713532e8db69c1c39b26">[詳解]</a><br/></td></tr>
+<tr class="separator:a3679ac9f89be713532e8db69c1c39b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9eddb6a7011e2379281429bbb6098e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#aef9eddb6a7011e2379281429bbb6098e">SetSignal</a> (int)</td></tr>
+<tr class="memdesc:aef9eddb6a7011e2379281429bbb6098e"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の閉塞の信号が変化したときに呼び出される関数  <a href="#aef9eddb6a7011e2379281429bbb6098e">[詳解]</a><br/></td></tr>
+<tr class="separator:aef9eddb6a7011e2379281429bbb6098e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70aac99c219fe2bce55892d6392f79e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atsplugin_8h.html#a70aac99c219fe2bce55892d6392f79e5">SetBeaconData</a> (<a class="el" href="struct_a_t_s___b_e_a_c_o_n_d_a_t_a.html">ATS_BEACONDATA</a>)</td></tr>
+<tr class="memdesc:a70aac99c219fe2bce55892d6392f79e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子を越えたときに呼び出される関数  <a href="#a70aac99c219fe2bce55892d6392f79e5">[詳解]</a><br/></td></tr>
+<tr class="separator:a70aac99c219fe2bce55892d6392f79e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a class="anchor" id="a2cf22746029f59244a1459adfc189cb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_API&#160;&#160;&#160;__declspec(dllimport)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7922453d539f15d38a4c9993a1ff55c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_CONSTANTSPEED_CONTINUE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfa9fc2414abdbc1a7fa95823481093a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_CONSTANTSPEED_DISABLE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f03cfff0a91ca8b992a6d79db3b28ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_CONSTANTSPEED_ENABLE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3eed9c8c8425c3ee6e5f1a7f20a5888e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_HORN_MUSIC&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03c08689d1a3fd44cbe44ebe12b635ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_HORN_PRIMARY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b38842cc8f4d5fcbe50e2c09eaf7ef0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_HORN_SECONDARY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e4ef47ea58cf64f3e606c9d6bdcb426"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_INIT_EMG&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a936110b8c0eed289f5aaff15a1ea031b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_INIT_REMOVED&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58efe4369509ec56dab0dab96dde7457"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_INIT_SVC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a401ec81a632876ea32ea4658b72ccc26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_A1&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f7a72991d435f1103772fe2bca5627a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_A2&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8a042d884fb7585bee2a35be29f590a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_B1&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa706b03b28853477b49665fe8937a439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_B2&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f26b85d070b8419ff50efe84a08602e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_C1&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09266fe5c32a7c352a6fd37936a4956e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_C2&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee15acf506142b6eb7f4ee5866c32211"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_D&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2798fea09edc9585baebaac0c7fb2f32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_E&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50b18d22e489e5ab725cdad569bb1b6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_F&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c5754f1d0cb1aa608663b27f20e2c06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_G&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49e45a2ad4ed879f444cd4a28eca75db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_H&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace48dffab4d402c0723c5017ccd9e2a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_I&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a167c6598a0b45e1abd338a93161decbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_J&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00d3bcf9088c8a0065b8bbad3baddc94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_K&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a844ab7a9296cd6c91ce239d78126acae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_L&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02edd0936b0c58844a0505c75f62659c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_KEY_S&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb09dc5d7715b22839da29b783cc3b66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_SOUND_CONTINUE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6c24c3a2a9716cfdc6ad4adf61e7da0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_SOUND_PLAY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a75c2932f6aff88f040f622a872ac95ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_SOUND_PLAYLOOPING&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa3453ebc22aa8ecc9f3e1a10c3da5af8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_SOUND_STOP&#160;&#160;&#160;-10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ac8886a81fc914ba3ce3b8dfda31114"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ATS_VERSION&#160;&#160;&#160;0x00020000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="ae77df478d1817d333027d18debc58e0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI BVE_Initialize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brake</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲーム開始時に呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brake</td><td>ゲーム開始時のブレーキ弁の状態</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="atsplugin_8h_ae77df478d1817d333027d18debc58e0d_cgraph.png" border="0" usemap="#atsplugin_8h_ae77df478d1817d333027d18debc58e0d_cgraph" alt=""/></div>
+<map name="atsplugin_8h_ae77df478d1817d333027d18debc58e0d_cgraph" id="atsplugin_8h_ae77df478d1817d333027d18debc58e0d_cgraph">
+<area shape="rect" id="node2" href="class_accel.html#a79855a06c9b483a42cc3b17dbf64f0e9" title="Initializeで実行する関数 " alt="" coords="161,5,242,32"/><area shape="rect" id="node3" href="class_atc.html#a25e96942a5e1b2e32ee62d3e7c1e3afb" title="Initializeで実行する関数 " alt="" coords="158,56,245,83"/><area shape="rect" id="node6" href="class_atsp.html#a39207dad3d8d801eba6cbe3fbc9e830b" title="Initializeで実行する関数 " alt="" coords="159,107,243,133"/><area shape="rect" id="node8" href="class_wiper.html#a7bb553330738312e9f1cd87049696ea2" title="Wiper::Init" alt="" coords="160,157,243,184"/><area shape="rect" id="node9" href="class_sub.html#acaf6c51af9b9de101961c9dbd8167a77" title="Initializeで実行する関数 " alt="" coords="166,208,237,235"/><area shape="rect" id="node4" href="class_atc.html#a94c036a1061ada246ea587d7bf61b583" title="速度に対応する信号インデックスを返す関数 " alt="" coords="301,5,427,32"/><area shape="rect" id="node5" href="class_atc.html#abf0a7dc339c0641e4b03fc45f9b1d9c9" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="297,56,431,83"/><area shape="rect" id="node7" href="class_atsp.html#a2c49bbbf67ae2ab91f6c39568a710226" title="速度照査パターンを作成する関数 " alt="" coords="294,107,434,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abba20290c79e93aeec8bc5c132ec5a79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI Dispose </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プラグインが解放されたときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3679ac9f89be713532e8db69c1c39b26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI DoorClose </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客室ドアが閉まったときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a66f5b3ebf230bb1f6b1b337f80cee366"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI DoorOpen </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客室ドアが開いたときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a348491d58db3bdcbd9a74fe176626c28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> <a class="el" href="struct_a_t_s___h_a_n_d_l_e_s.html">ATS_HANDLES</a> WINAPI Elapse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_t_a_t_e.html">ATS_VEHICLESTATE</a>&#160;</td>
+          <td class="paramname"><em>vehicleState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>panel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1フレームごとに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vehicleState</td><td>車両の状態量</td></tr>
+    <tr><td class="paramname">panel</td><td>パネルに渡す値</td></tr>
+    <tr><td class="paramname">sound</td><td>サウンド</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>BVEに渡す制御値</dd></dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="atsplugin_8h_a348491d58db3bdcbd9a74fe176626c28_cgraph.png" border="0" usemap="#atsplugin_8h_a348491d58db3bdcbd9a74fe176626c28_cgraph" alt=""/></div>
+<map name="atsplugin_8h_a348491d58db3bdcbd9a74fe176626c28_cgraph" id="atsplugin_8h_a348491d58db3bdcbd9a74fe176626c28_cgraph">
+<area shape="rect" id="node2" href="_ats_8cpp.html#a64863ab89282bec8b5846c0b9348ad08" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="118,132,229,159"/><area shape="rect" id="node9" href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c" title="Elapseで実行する関数 " alt="" coords="130,259,217,285"/><area shape="rect" id="node12" href="class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="127,664,219,691"/><area shape="rect" id="node33" href="class_atsp.html#acd0d2d705b729542c4aa2d8d924e351c" title="Elapseで実行する関数 " alt="" coords="129,1019,218,1045"/><area shape="rect" id="node40" href="class_wiper.html#a199010d0923f74b7c941ab718ae6bd24" title="Wiper::Exe" alt="" coords="130,1145,217,1172"/><area shape="rect" id="node42" href="class_sub.html#a7d0a4ed38326d8a2361139875c9ae3ca" title="Elapseで実行する関数 " alt="" coords="135,1424,211,1451"/><area shape="rect" id="node3" href="class_atc.html#a698a73b4310e5f6c01cc46bc1aeb6c08" title="SetBeaconDataで実行される関数 " alt="" coords="284,56,441,83"/><area shape="rect" id="node6" href="class_atsp.html#afbd20ef5e15ff528693452c9031ea9f0" title="SetBeaconDataで実行される関数 " alt="" coords="285,107,440,133"/><area shape="rect" id="node8" href="class_sub.html#abf305e553e8e2463d50919b8d8cfdd42" title="距離表示に加算する補正値を受け取る関数 " alt="" coords="306,157,419,184"/><area shape="rect" id="node4" href="class_atc.html#a878f174d0e0ee60b0897480d049153b1" title="ATC&#45;1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 " alt="" coords="523,5,645,32"/><area shape="rect" id="node5" href="class_atc.html#afa1bc831e3c27552f8719326b4bd0844" title="ATC方式を切り替える関数 " alt="" coords="509,56,659,83"/><area shape="rect" id="node7" href="class_atsp.html#a63fb294dfe04cb7c77cc3e5e4389fe0e" title="勾配補正設定を行う関数 " alt="" coords="509,107,659,133"/><area shape="rect" id="node10" href="class_accel.html#a3ab7a6d44cdb16ab7dc0cdd11465b7f9" title="列車の生の加速度を算出する関数 " alt="" coords="287,208,438,235"/><area shape="rect" id="node11" href="class_accel.html#adff271ac418cbf768833592fd7be5dc1" title="列車の指数移動平均加速度を算出する関数 " alt="" coords="287,259,438,285"/><area shape="rect" id="node13" href="class_atc.html#a7729db908df2c00d1957fa3ce2f10d50" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="305,411,421,437"/><area shape="rect" id="node14" href="class_atc.html#ab28b0ba255fa5d3677db7a2fbfd23ad5" title="信号インデックスを速度に変換する関数 " alt="" coords="771,411,845,437"/><area shape="rect" id="node16" href="class_atc.html#a9afbeb458e4349356c09c5b4fa230b9d" title="パターン情報を集約する関数 " alt="" coords="296,715,429,741"/><area shape="rect" id="node17" href="class_atc.html#a83e7b49b2925740ffb1b5849b3ca16e7" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="303,664,422,691"/><area shape="rect" id="node22" href="class_atc.html#ab2a7d3d46010d27ec599008784ff274b" title="デジタルATC用車内信号を生成する関数 " alt="" coords="498,613,670,640"/><area shape="rect" id="node24" href="class_atc.html#a0b07226d0aa1bf9ae9f3b076e70362f6" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="304,765,421,792"/><area shape="rect" id="node26" href="class_atc.html#a4d74d0ea7ca05aff397655d760c3ffaa" title="インジケーターの表示を初期化する関数 " alt="" coords="285,816,440,843"/><area shape="rect" id="node27" href="class_atc.html#aec232d6002900b1288bdcaad6a48e8fe" title="インジケーターの表示を実行する関数 " alt="" coords="291,512,434,539"/><area shape="rect" id="node31" href="class_atc.html#aeb8dda895461e30ee23d60260b745596" title="副速度計の表示を実行する関数 " alt="" coords="497,563,671,589"/><area shape="rect" id="node32" href="class_atc.html#a0e46d640f90ffc8e9b3ef266281fcc6b" title="サウンドを再生する関数 " alt="" coords="306,867,419,893"/><area shape="rect" id="node15" href="class_atc.html#a7f3f559840537697400463fbb21b01d4" title="予見Fuzzy制御ではないブレーキノッチを出力する関数 " alt="" coords="509,411,659,437"/><area shape="rect" id="node18" href="class_atc.html#a575fb2420a8d3172e2593ff138abdd3f" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="523,664,645,691"/><area shape="rect" id="node19" href="class_atc.html#a653c0a64e85a2a6d6978d9bcb140c79c" title="パターン照査速度を算出する関数 " alt="" coords="513,715,655,741"/><area shape="rect" id="node21" href="class_atc.html#a994149818da128f97bf49daad8d1163f" title="パターン降下開始地点を算出する関数 " alt="" coords="514,765,654,792"/><area shape="rect" id="node20" href="class_base.html#a3be019f034d372218e5252de50306f10" title="vectorコンテナへの範囲外アクセス時にデフォルト値を返す関数 " alt="" coords="721,715,895,741"/><area shape="rect" id="node23" href="class_atc.html#a94c036a1061ada246ea587d7bf61b583" title="速度に対応する信号インデックスを返す関数 " alt="" coords="745,613,871,640"/><area shape="rect" id="node25" href="class_atc.html#a83141d1e584eefdfe10cd48184100cc5" title="全パターンに対する最大の最適ブレーキノッチを出力する関数 " alt="" coords="523,816,645,843"/><area shape="rect" id="node28" href="class_atc.html#a23cd2949ba41bca7941a232e1e2c791c" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="517,461,651,488"/><area shape="rect" id="node30" href="class_atc.html#aa8b902a62675db13ae68f32a92a4d2f8" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="517,512,651,539"/><area shape="rect" id="node29" href="class_atc.html#aee46d2b3c6071f948db34cebad6653bd" title="速度を7セグに表示する関数 " alt="" coords="749,512,867,539"/><area shape="rect" id="node34" href="class_atsp.html#aa48418ca28de5e1cc9f9d70dc00a8d98" title="パターン情報を集約する関数 " alt="" coords="293,917,433,944"/><area shape="rect" id="node35" href="class_atsp.html#af767ce5a679f1f3dcdf707266d5aef56" title="各パターン情報からパターン照査速度を算出し、パターン接近警報の状態を取得する関数 " alt="" coords="299,968,426,995"/><area shape="rect" id="node36" href="class_atsp.html#abc76f450e697f48a58c165064b91e0c2" title="フラグのON, OFFを行う関数 " alt="" coords="301,1019,424,1045"/><area shape="rect" id="node37" href="class_atsp.html#a40dd35cfad590104eb43a97aac7f44dd" title="ブレーキノッチを出力する関数 " alt="" coords="305,1069,420,1096"/><area shape="rect" id="node38" href="class_atsp.html#a5b8b0329d729e97acd1d791b71273f57" title="ランプの点灯, 消灯を行う関数 " alt="" coords="296,1120,429,1147"/><area shape="rect" id="node39" href="class_atsp.html#a263b78eb089488180968e304b6851ed8" title="サウンドを再生する関数 " alt="" coords="303,1171,423,1197"/><area shape="rect" id="node41" href="class_wiper.html#ab34c87b1d1bcbe3ba96f3608cbef946e" title="Wiper::MoveWiper" alt="" coords="297,1221,428,1248"/><area shape="rect" id="node43" href="class_sub.html#a03df04402efaeeb2a7420cd9bd044029" title="ATCブレーキの緩解音を再生する関数 " alt="" coords="287,1272,439,1299"/><area shape="rect" id="node44" href="class_sub.html#a66de923fe1ad9e9a9400557c9a5459f2" title="1桁ごと分割された時刻を出力する関数 " alt="" coords="297,1323,428,1349"/><area shape="rect" id="node45" href="class_sub.html#a0286e937d6c5bbb70a70c6d26f71cd3d" title="アナログ時計を表示する関数 " alt="" coords="277,1373,448,1400"/><area shape="rect" id="node46" href="class_sub.html#a33acf8b0cda0495a79de1680ee22cb5f" title="1桁ごと分割された電流値を出力する関数 " alt="" coords="293,1424,433,1451"/><area shape="rect" id="node47" href="class_sub.html#a6d75e39488ff59febb913c63d2640687" title="レバーサの位置を表示する関数 " alt="" coords="287,1475,438,1501"/><area shape="rect" id="node48" href="class_sub.html#a7451c920bb8d2d8d09b916bac01970f0" title="0系/200系用速度計の針の表示を初期化する関数 " alt="" coords="280,1525,445,1552"/><area shape="rect" id="node49" href="class_sub.html#a0f6cdde20005e50ac3b02174b23ef730" title="0系/200系用速度計の針を表示する関数 " alt="" coords="285,1576,440,1603"/><area shape="rect" id="node50" href="class_sub.html#a41925c024979e5f7e5ffe5baa3ebd696" title="サウンドを再生する関数 " alt="" coords="305,1627,421,1653"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2b052e0b1997eaf3c0ba2a636912bfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> int WINAPI GetPluginVersion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>このATSプラグインが準じているフォーマットを返す関数 </p>
+<dl class="section return"><dt>戻り値</dt><dd>フォーマットのバージョン</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a71385d481765fa9c342e4e29fd566ab4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI HornBlow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hornType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>警笛が扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hornType</td><td>警笛のタイプ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb7ec2bc9a5b646e8ba6754be18ab7d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atsKeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ATSキーが押されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">atsKeyCode</td><td>ATSキー コード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="atsplugin_8h_aeb7ec2bc9a5b646e8ba6754be18ab7d7_cgraph.png" border="0" usemap="#atsplugin_8h_aeb7ec2bc9a5b646e8ba6754be18ab7d7_cgraph" alt=""/></div>
+<map name="atsplugin_8h_aeb7ec2bc9a5b646e8ba6754be18ab7d7_cgraph" id="atsplugin_8h_aeb7ec2bc9a5b646e8ba6754be18ab7d7_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#abad9543fb50ce63d392d6469e0f0272e" title="確認ボタンが押下された際に実行する関数 " alt="" coords="133,5,291,32"/><area shape="rect" id="node4" href="class_atsp.html#a5fb3d72c256faf2db03dddf0c4d49f84" title="復帰ボタンが押下された際に実行する関数 " alt="" coords="135,56,289,83"/><area shape="rect" id="node6" href="class_sub.html#a00bcb2799967b6ae408f0216ff53ba93" title="手元灯SWが押下された際に呼び出される関数 " alt="" coords="145,107,279,133"/><area shape="rect" id="node7" href="class_wiper.html#aae08ef14f88c6a61087e3836bc55732d" title="Wiper::WiperRequest" alt="" coords="139,157,285,184"/><area shape="rect" id="node8" href="class_sub.html#a065e34d04f7f1b1fc6f057293038e3d8" title="LCD切り替えSWが押下された際に呼び出される関数 " alt="" coords="149,208,275,235"/><area shape="rect" id="node3" href="class_atc.html#ab61b1847931420e9d441229bfee20dda" title="ATC&#45;1, 2, NSにおいて確認扱いの判定を行う関数 " alt="" coords="343,5,428,32"/><area shape="rect" id="node5" href="class_atsp.html#a3e48d82add848baef57311522442e939" title="復帰扱いの判定を行う関数 " alt="" coords="339,56,431,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="affa626b946b8fba5e7091a306bf56fe9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI KeyUp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atsKeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ATSキーが離されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">atsKeyCode</td><td>ATSキー コード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="atsplugin_8h_affa626b946b8fba5e7091a306bf56fe9_cgraph.png" border="0" usemap="#atsplugin_8h_affa626b946b8fba5e7091a306bf56fe9_cgraph" alt=""/></div>
+<map name="atsplugin_8h_affa626b946b8fba5e7091a306bf56fe9_cgraph" id="atsplugin_8h_affa626b946b8fba5e7091a306bf56fe9_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#a8bc5d4c5a847570ee8158161bc88a916" title="確認ボタンが開放された際に実行する関数 " alt="" coords="118,5,258,32"/><area shape="rect" id="node3" href="class_sub.html#a1603ba0c365eae1e5bbee56cc20bb49c" title="手元灯SWが開放された際に実行する関数 " alt="" coords="129,56,247,83"/><area shape="rect" id="node4" href="class_sub.html#ac09ed098a49bb64c412498466e0a468f" title="LCD切り替えSWが開放された際に実行する関数 " alt="" coords="133,107,243,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a671c4d652a03c95a3b206d67829f5825"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI Load </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プラグインが読み込まれたときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a70aac99c219fe2bce55892d6392f79e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetBeaconData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_t_s___b_e_a_c_o_n_d_a_t_a.html">ATS_BEACONDATA</a>&#160;</td>
+          <td class="paramname"><em>beaconData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>地上子を越えたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beaconData</td><td>車上子で受け取った情報</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8cd630346fd25f36f4ac94ecbfb4d04a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetBrake </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>notch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ブレーキが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notch</td><td>ブレーキノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab98a5e73fb0dadc0716a64d5d68fcff5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetPower </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>notch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>主ハンドルが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notch</td><td>力行ノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b91819946b5686b41eaa319db2f8f4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetReverser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>レバーサーが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>レバーサー位置</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aef9eddb6a7011e2379281429bbb6098e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetSignal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の閉塞の信号が変化したときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="atsplugin_8h_aef9eddb6a7011e2379281429bbb6098e_cgraph.png" border="0" usemap="#atsplugin_8h_aef9eddb6a7011e2379281429bbb6098e_cgraph" alt=""/></div>
+<map name="atsplugin_8h_aef9eddb6a7011e2379281429bbb6098e_cgraph" id="atsplugin_8h_aef9eddb6a7011e2379281429bbb6098e_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#a35a344872a8d1fa1f586d194852ea3f3" title="SetSignalで実行される関数 " alt="" coords="133,5,291,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a7f09a01444ade1606943b74b3bfe95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetVehicleSpec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_p_e_c.html">ATS_VEHICLESPEC</a>&#160;</td>
+          <td class="paramname"><em>vehicleSpec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>車両読み込み時に呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vehicleSpec</td><td>車両諸元</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

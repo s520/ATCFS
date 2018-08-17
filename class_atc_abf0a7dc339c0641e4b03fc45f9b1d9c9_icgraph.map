@@ -1,0 +1,6 @@
+<map id="Atc::SetPatternList" name="Atc::SetPatternList">
+<area shape="rect" id="node2" href="$class_atc.html#a25e96942a5e1b2e32ee62d3e7c1e3afb" title="Initializeで実行する関数 " alt="" coords="187,56,274,83"/>
+<area shape="rect" id="node3" href="$class_atc.html#ab79809170a8b03589717ff9ba40f68c6" title="ATCを投入する際に実行する関数 " alt="" coords="326,5,423,32"/>
+<area shape="rect" id="node4" href="$class_atc.html#a9086c390c998962007f5bd49d8f80207" title="ATCを遮断する際に実行する関数 " alt="" coords="329,56,421,83"/>
+<area shape="rect" id="node5" href="$atsplugin_8h.html#ae77df478d1817d333027d18debc58e0d" title="ゲーム開始時に呼び出される関数 " alt="" coords="323,107,427,133"/>
+</map>

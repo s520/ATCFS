@@ -1,0 +1,9 @@
+<map id="PassedBeacon" name="PassedBeacon">
+<area shape="rect" id="node2" href="$class_atc.html#a698a73b4310e5f6c01cc46bc1aeb6c08" title="SetBeaconDataで実行される関数 " alt="" coords="165,56,323,83"/>
+<area shape="rect" id="node5" href="$class_atsp.html#afbd20ef5e15ff528693452c9031ea9f0" title="SetBeaconDataで実行される関数 " alt="" coords="167,107,321,133"/>
+<area shape="rect" id="node8" href="$class_sub.html#abf305e553e8e2463d50919b8d8cfdd42" title="距離表示に加算する補正値を受け取る関数 " alt="" coords="187,157,301,184"/>
+<area shape="rect" id="node3" href="$class_atc.html#a878f174d0e0ee60b0897480d049153b1" title="ATC&#45;1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 " alt="" coords="385,5,508,32"/>
+<area shape="rect" id="node4" href="$class_atc.html#afa1bc831e3c27552f8719326b4bd0844" title="ATC方式を切り替える関数 " alt="" coords="371,56,522,83"/>
+<area shape="rect" id="node6" href="$class_atsp.html#a63fb294dfe04cb7c77cc3e5e4389fe0e" title="勾配補正設定を行う関数 " alt="" coords="372,107,521,133"/>
+<area shape="rect" id="node7" href="$class_atsp.html#a2c49bbbf67ae2ab91f6c39568a710226" title="速度照査パターンを作成する関数 " alt="" coords="571,107,711,133"/>
+</map>

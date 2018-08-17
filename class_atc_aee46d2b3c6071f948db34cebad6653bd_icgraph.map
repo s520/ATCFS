@@ -1,0 +1,8 @@
+<map id="Atc::DisplaySpd" name="Atc::DisplaySpd">
+<area shape="rect" id="node2" href="$class_atc.html#a23cd2949ba41bca7941a232e1e2c791c" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="172,5,305,32"/>
+<area shape="rect" id="node6" href="$class_atc.html#aa8b902a62675db13ae68f32a92a4d2f8" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="171,56,306,83"/>
+<area shape="rect" id="node7" href="$class_atc.html#aeb8dda895461e30ee23d60260b745596" title="副速度計の表示を実行する関数 " alt="" coords="355,107,530,133"/>
+<area shape="rect" id="node3" href="$class_atc.html#aec232d6002900b1288bdcaad6a48e8fe" title="インジケーターの表示を実行する関数 " alt="" coords="371,56,514,83"/>
+<area shape="rect" id="node4" href="$class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="579,81,671,108"/>
+<area shape="rect" id="node5" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="721,81,783,108"/>
+</map>

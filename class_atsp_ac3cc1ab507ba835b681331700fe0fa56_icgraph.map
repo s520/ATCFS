@@ -1,0 +1,6 @@
+<map id="Atsp::CalcPatternSpd" name="Atsp::CalcPatternSpd">
+<area shape="rect" id="node2" href="$class_atsp.html#ad02bdc39309234956d363980e6d252e0" title="パターン接近警報を発信する関数 " alt="" coords="203,5,347,32"/>
+<area shape="rect" id="node3" href="$class_atsp.html#af767ce5a679f1f3dcdf707266d5aef56" title="各パターン情報からパターン照査速度を算出し、パターン接近警報の状態を取得する関数 " alt="" coords="395,31,522,57"/>
+<area shape="rect" id="node4" href="$class_atsp.html#acd0d2d705b729542c4aa2d8d924e351c" title="Elapseで実行する関数 " alt="" coords="571,31,661,57"/>
+<area shape="rect" id="node5" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="710,31,773,57"/>
+</map>

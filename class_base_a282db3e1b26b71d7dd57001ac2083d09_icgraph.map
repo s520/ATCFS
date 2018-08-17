@@ -1,0 +1,9 @@
+<map id="Base::ArrayGetOrDefault" name="Base::ArrayGetOrDefault">
+<area shape="rect" id="node2" href="$class_atc.html#ab28b0ba255fa5d3677db7a2fbfd23ad5" title="信号インデックスを速度に変換する関数 " alt="" coords="221,81,296,108"/>
+<area shape="rect" id="node3" href="$class_atc.html#ab2a7d3d46010d27ec599008784ff274b" title="デジタルATC用車内信号を生成する関数 " alt="" coords="526,5,698,32"/>
+<area shape="rect" id="node4" href="$class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="747,81,839,108"/>
+<area shape="rect" id="node6" href="$class_atc.html#a7729db908df2c00d1957fa3ce2f10d50" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="353,107,469,133"/>
+<area shape="rect" id="node7" href="$class_atc.html#a23cd2949ba41bca7941a232e1e2c791c" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="344,157,477,184"/>
+<area shape="rect" id="node5" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="889,81,951,108"/>
+<area shape="rect" id="node8" href="$class_atc.html#aec232d6002900b1288bdcaad6a48e8fe" title="インジケーターの表示を実行する関数 " alt="" coords="541,157,683,184"/>
+</map>

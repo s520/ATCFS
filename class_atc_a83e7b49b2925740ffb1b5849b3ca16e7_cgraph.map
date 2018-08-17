@@ -1,0 +1,7 @@
+<map id="Atc::CalcPattern" name="Atc::CalcPattern">
+<area shape="rect" id="node2" href="$class_atc.html#a575fb2420a8d3172e2593ff138abdd3f" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="185,5,306,32"/>
+<area shape="rect" id="node3" href="$class_atc.html#a653c0a64e85a2a6d6978d9bcb140c79c" title="パターン照査速度を算出する関数 " alt="" coords="174,56,317,83"/>
+<area shape="rect" id="node6" href="$class_atc.html#a994149818da128f97bf49daad8d1163f" title="パターン降下開始地点を算出する関数 " alt="" coords="175,107,315,133"/>
+<area shape="rect" id="node4" href="$class_atc.html#aa7c190f22ccba52ba4e316dbbc673c3b" title="距離に対応する速度を返す関数 " alt="" coords="387,56,520,83"/>
+<area shape="rect" id="node5" href="$class_base.html#a3be019f034d372218e5252de50306f10" title="vectorコンテナへの範囲外アクセス時にデフォルト値を返す関数 " alt="" coords="366,107,541,133"/>
+</map>

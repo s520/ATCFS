@@ -1,0 +1,5 @@
+<map id="Atc::InitNS" name="Atc::InitNS">
+<area shape="rect" id="node2" href="$class_atc.html#ab79809170a8b03589717ff9ba40f68c6" title="ATCを投入する際に実行する関数 " alt="" coords="145,5,242,32"/>
+<area shape="rect" id="node3" href="$class_atc.html#a9086c390c998962007f5bd49d8f80207" title="ATCを遮断する際に実行する関数 " alt="" coords="147,56,239,83"/>
+<area shape="rect" id="node4" href="$atsplugin_8h.html#ae77df478d1817d333027d18debc58e0d" title="ゲーム開始時に呼び出される関数 " alt="" coords="141,107,245,133"/>
+</map>

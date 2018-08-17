@@ -1,0 +1,5 @@
+<map id="Atc::ChangedAtcType" name="Atc::ChangedAtcType">
+<area shape="rect" id="node2" href="$class_atc.html#a698a73b4310e5f6c01cc46bc1aeb6c08" title="SetBeaconDataで実行される関数 " alt="" coords="205,5,363,32"/>
+<area shape="rect" id="node3" href="$_ats_8h.html#a6a2eabd75b7f5b29cff27778aa8b7377" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="411,5,522,32"/>
+<area shape="rect" id="node4" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="571,5,634,32"/>
+</map>

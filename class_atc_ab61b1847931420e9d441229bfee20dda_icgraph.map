@@ -1,0 +1,4 @@
+<map id="Atc::Reset" name="Atc::Reset">
+<area shape="rect" id="node2" href="$class_atc.html#abad9543fb50ce63d392d6469e0f0272e" title="確認ボタンが押下された際に実行する関数 " alt="" coords="139,5,296,32"/>
+<area shape="rect" id="node3" href="$atsplugin_8h.html#aeb7ec2bc9a5b646e8ba6754be18ab7d7" title="ATSキーが押されたときに呼び出される関数 " alt="" coords="345,5,423,32"/>
+</map>

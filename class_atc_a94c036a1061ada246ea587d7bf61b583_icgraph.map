@@ -1,0 +1,9 @@
+<map id="Atc::SearchSignal" name="Atc::SearchSignal">
+<area shape="rect" id="node2" href="$class_atc.html#a25e96942a5e1b2e32ee62d3e7c1e3afb" title="Initializeで実行する関数 " alt="" coords="225,69,311,96"/>
+<area shape="rect" id="node6" href="$class_atc.html#ab2a7d3d46010d27ec599008784ff274b" title="デジタルATC用車内信号を生成する関数 " alt="" coords="182,145,354,172"/>
+<area shape="rect" id="node3" href="$class_atc.html#ab79809170a8b03589717ff9ba40f68c6" title="ATCを投入する際に実行する関数 " alt="" coords="406,5,503,32"/>
+<area shape="rect" id="node4" href="$class_atc.html#a9086c390c998962007f5bd49d8f80207" title="ATCを遮断する際に実行する関数 " alt="" coords="409,56,501,83"/>
+<area shape="rect" id="node5" href="$atsplugin_8h.html#ae77df478d1817d333027d18debc58e0d" title="ゲーム開始時に呼び出される関数 " alt="" coords="403,107,507,133"/>
+<area shape="rect" id="node7" href="$class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="409,157,501,184"/>
+<area shape="rect" id="node8" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="555,157,618,184"/>
+</map>

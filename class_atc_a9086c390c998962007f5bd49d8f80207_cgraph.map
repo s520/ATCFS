@@ -1,0 +1,5 @@
+<map id="Atc::ExitNS" name="Atc::ExitNS">
+<area shape="rect" id="node2" href="$class_atc.html#a25e96942a5e1b2e32ee62d3e7c1e3afb" title="Initializeで実行する関数 " alt="" coords="147,31,234,57"/>
+<area shape="rect" id="node3" href="$class_atc.html#a94c036a1061ada246ea587d7bf61b583" title="速度に対応する信号インデックスを返す関数 " alt="" coords="286,5,413,32"/>
+<area shape="rect" id="node4" href="$class_atc.html#abf0a7dc339c0641e4b03fc45f9b1d9c9" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="283,56,416,83"/>
+</map>

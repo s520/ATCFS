@@ -1,0 +1,10 @@
+<map id="BVE_Initialize" name="BVE_Initialize">
+<area shape="rect" id="node2" href="$class_accel.html#a79855a06c9b483a42cc3b17dbf64f0e9" title="Initializeで実行する関数 " alt="" coords="161,5,242,32"/>
+<area shape="rect" id="node3" href="$class_atc.html#a25e96942a5e1b2e32ee62d3e7c1e3afb" title="Initializeで実行する関数 " alt="" coords="158,56,245,83"/>
+<area shape="rect" id="node6" href="$class_atsp.html#a39207dad3d8d801eba6cbe3fbc9e830b" title="Initializeで実行する関数 " alt="" coords="159,107,243,133"/>
+<area shape="rect" id="node8" href="$class_wiper.html#a7bb553330738312e9f1cd87049696ea2" title="Wiper::Init" alt="" coords="160,157,243,184"/>
+<area shape="rect" id="node9" href="$class_sub.html#acaf6c51af9b9de101961c9dbd8167a77" title="Initializeで実行する関数 " alt="" coords="166,208,237,235"/>
+<area shape="rect" id="node4" href="$class_atc.html#a94c036a1061ada246ea587d7bf61b583" title="速度に対応する信号インデックスを返す関数 " alt="" coords="301,5,427,32"/>
+<area shape="rect" id="node5" href="$class_atc.html#abf0a7dc339c0641e4b03fc45f9b1d9c9" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="297,56,431,83"/>
+<area shape="rect" id="node7" href="$class_atsp.html#a2c49bbbf67ae2ab91f6c39568a710226" title="速度照査パターンを作成する関数 " alt="" coords="294,107,434,133"/>
+</map>

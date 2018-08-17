@@ -1,0 +1,5 @@
+<map id="Atc::CalcPatternLoc" name="Atc::CalcPatternLoc">
+<area shape="rect" id="node2" href="$class_atc.html#a83e7b49b2925740ffb1b5849b3ca16e7" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="195,5,314,32"/>
+<area shape="rect" id="node3" href="$class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="363,5,455,32"/>
+<area shape="rect" id="node4" href="$atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="505,5,567,32"/>
+</map>

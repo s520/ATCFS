@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS: Sub.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sub.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sub_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2018 S520</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met :</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// this list of conditions and the following disclaimer in the documentation</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// and / or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// DISCLAIMED.IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef SUB_H_</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUB_H_</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;boost/array.hpp&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_sub.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sub.html">Sub</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_sub.html#af70b978475625111b7c2f8eca42f4b98">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#af70b978475625111b7c2f8eca42f4b98">brake_status_</a>;  </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_sub.html#a5aedf356e49698a68832ba7849bdc084">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a5aedf356e49698a68832ba7849bdc084">prev_brake_status_</a>;  </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_sub.html#a8405ecdc9b93cb2cec0547561239675b">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a8405ecdc9b93cb2cec0547561239675b">next_atc_air_sound_</a>;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_sub.html#a4cbf1820f8747eb2d98fe2a2b876de57">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a4cbf1820f8747eb2d98fe2a2b876de57">next_lcd_sw_down_sound_</a>;  </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_sub.html#ac5d76ae105a82db79bc088bbaf677d1b">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#ac5d76ae105a82db79bc088bbaf677d1b">next_lcd_sw_up_sound_</a>;  </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_sub.html#a404bdad012995be69ca51d8bda4fcfd5">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a404bdad012995be69ca51d8bda4fcfd5">next_light_sw_down_sound_</a>;  </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_sub.html#a11efabe0a1ca052eeb95bd77fe012ef7">   39</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a11efabe0a1ca052eeb95bd77fe012ef7">next_light_sw_up_sound_</a>;  </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a03df04402efaeeb2a7420cd9bd044029">PlayAtcAirSound</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a66de923fe1ad9e9a9400557c9a5459f2">DisplayClock</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a0286e937d6c5bbb70a70c6d26f71cd3d">DisplayAnalogClock</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a33acf8b0cda0495a79de1680ee22cb5f">DisplayCurrent</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a6d75e39488ff59febb913c63d2640687">DisplayReverser</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a7451c920bb8d2d8d09b916bac01970f0">ResetSpeedometer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a0f6cdde20005e50ac3b02174b23ef730">RunSpeedometer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a41925c024979e5f7e5ffe5baa3ebd696">PlaySound</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_sub.html#ae48302bd086d3b0db4db498d7a6eb442">   51</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> *<a class="code" href="class_sub.html#ae48302bd086d3b0db4db498d7a6eb442">TrainSpeed</a>;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_sub.html#ab661eb1b24358b43ee5477e7eaf620a9">   52</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> *<a class="code" href="class_sub.html#ab661eb1b24358b43ee5477e7eaf620a9">Time</a>;  </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_sub.html#aecd582ee48e367e287dcae408d26ff76">   53</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> *<a class="code" href="class_sub.html#aecd582ee48e367e287dcae408d26ff76">Reverser</a>;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_sub.html#a1d05d72f7fc760d999396cb64f11341a">   54</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> *<a class="code" href="class_sub.html#a1d05d72f7fc760d999396cb64f11341a">atc_brake_notch_</a>;  </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_sub.html#a41afbbb320e7bd8689143ff456a8f162">   55</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sub.html#a41afbbb320e7bd8689143ff456a8f162">Current</a>;  </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_sub.html#a6933c65d0dac6a8215d9880d854e49ef">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a6933c65d0dac6a8215d9880d854e49ef">current_negative_</a>;  </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_sub.html#a97d6e5fd426772214ba6d2dc01de236a">   57</a></span>&#160;    boost::array&lt;int, 4&gt;<a class="code" href="class_sub.html#a97d6e5fd426772214ba6d2dc01de236a">current_list_</a>;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_sub.html#a08687ebb62481537c3b41d23078a5313">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a08687ebb62481537c3b41d23078a5313">ac_voltage_</a>;  </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_sub.html#a6331f95617d3d359585478ced51b6526">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a6331f95617d3d359585478ced51b6526">cv_voltage_</a>;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_sub.html#a582b8fc03970849bc609beee12d6aaee">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a582b8fc03970849bc609beee12d6aaee">atc_air_sound_</a>;  </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_sub.html#ac6d0758b1022853d9ccb78d7b4e470b6">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#ac6d0758b1022853d9ccb78d7b4e470b6">reverser_position_</a>;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_sub.html#a4a6ba833dceb8d3de64dfe7db17eec4d">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a4a6ba833dceb8d3de64dfe7db17eec4d">lcd_sw_</a>;  </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_sub.html#a30461df99957e10010ae6a3426ee9764">   63</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a30461df99957e10010ae6a3426ee9764">lcd_status_</a>;  </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_sub.html#a97040151c22ec6949de3a6c22361d16d">   64</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a97040151c22ec6949de3a6c22361d16d">lcd_sw_down_sound_</a>;  </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_sub.html#a5348f63e4c78528342b890273d70a56a">   65</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a5348f63e4c78528342b890273d70a56a">lcd_sw_up_sound_</a>;  </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_sub.html#a729ba42636cbcad3e8d7f61fb03aa384">   66</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a729ba42636cbcad3e8d7f61fb03aa384">light_sw_</a>;  </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_sub.html#a2e8e902707219fbf2f259ccf58be33b8">   67</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a2e8e902707219fbf2f259ccf58be33b8">light_status_</a>;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_sub.html#a4c41ae0cb03eef29f3c8ef6b9c6a1831">   68</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a4c41ae0cb03eef29f3c8ef6b9c6a1831">light_sw_down_sound_</a>;  </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_sub.html#a6c6af486fba49b03743f1e0c196248f4">   69</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a6c6af486fba49b03743f1e0c196248f4">light_sw_up_sound_</a>;  </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_sub.html#a645b909e42dd3cdb22f5b1b593526b4b">   70</a></span>&#160;    boost::array&lt;int, 6&gt;<a class="code" href="class_sub.html#a645b909e42dd3cdb22f5b1b593526b4b">digital_clock_</a>;  </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_sub.html#a9a9b3d79c7ab234300ea2e89f3a970b7">   71</a></span>&#160;    boost::array&lt;int, 3&gt;<a class="code" href="class_sub.html#a9a9b3d79c7ab234300ea2e89f3a970b7">analog_clock_</a>;  </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_sub.html#ac29b77a5f273cf70cd6c1d8d5c95dc0e">   72</a></span>&#160;    boost::array&lt;int, 28&gt;<a class="code" href="class_sub.html#ac29b77a5f273cf70cd6c1d8d5c95dc0e">speedometer_</a>;  </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_sub.html#a1e053d3b5c152be116e23a23f386bc93">   73</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sub.html#a1e053d3b5c152be116e23a23f386bc93">adj_loc_</a>;  </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_sub.html#afa71a543bc0369cc321aecea54d600b1">Sub</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_sub.html#afc3b8ae73ac7a2e82a01b9e5777b3ff4">~Sub</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#acaf6c51af9b9de101961c9dbd8167a77">Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a065e34d04f7f1b1fc6f057293038e3d8">LcdSwDown</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#ac09ed098a49bb64c412498466e0a468f">LcdSwUp</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a00bcb2799967b6ae408f0216ff53ba93">LightSwDown</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a1603ba0c365eae1e5bbee56cc20bb49c">LightSwUp</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#abf305e553e8e2463d50919b8d8cfdd42">SetAdjLoc</a>(<span class="keywordtype">int</span> distance);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sub.html#a7d0a4ed38326d8a2361139875c9ae3ca">Exe</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif  // SUB_H_</span></div>
+<div class="ttc" id="class_sub_html_ac09ed098a49bb64c412498466e0a468f"><div class="ttname"><a href="class_sub.html#ac09ed098a49bb64c412498466e0a468f">Sub::LcdSwUp</a></div><div class="ttdeci">void LcdSwUp(void)</div><div class="ttdoc">LCD切り替えSWが開放された際に実行する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:67</div></div>
+<div class="ttc" id="class_sub_html_a1e053d3b5c152be116e23a23f386bc93"><div class="ttname"><a href="class_sub.html#a1e053d3b5c152be116e23a23f386bc93">Sub::adj_loc_</a></div><div class="ttdeci">int adj_loc_</div><div class="ttdoc">距離表示に加算する補正値[m] </div><div class="ttdef"><b>Definition:</b> Sub.h:73</div></div>
+<div class="ttc" id="class_sub_html_a33acf8b0cda0495a79de1680ee22cb5f"><div class="ttname"><a href="class_sub.html#a33acf8b0cda0495a79de1680ee22cb5f">Sub::DisplayCurrent</a></div><div class="ttdeci">void DisplayCurrent(void)</div><div class="ttdoc">1桁ごと分割された電流値を出力する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:135</div></div>
+<div class="ttc" id="class_sub_html_a4cbf1820f8747eb2d98fe2a2b876de57"><div class="ttname"><a href="class_sub.html#a4cbf1820f8747eb2d98fe2a2b876de57">Sub::next_lcd_sw_down_sound_</a></div><div class="ttdeci">int next_lcd_sw_down_sound_</div><div class="ttdoc">1フレーム後のLCD切り替えSWの押下音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:36</div></div>
+<div class="ttc" id="class_sub_html_afc3b8ae73ac7a2e82a01b9e5777b3ff4"><div class="ttname"><a href="class_sub.html#afc3b8ae73ac7a2e82a01b9e5777b3ff4">Sub::~Sub</a></div><div class="ttdeci">virtual ~Sub(void)</div><div class="ttdef"><b>Definition:</b> Sub.cpp:31</div></div>
+<div class="ttc" id="class_sub_html_a7451c920bb8d2d8d09b916bac01970f0"><div class="ttname"><a href="class_sub.html#a7451c920bb8d2d8d09b916bac01970f0">Sub::ResetSpeedometer</a></div><div class="ttdeci">void ResetSpeedometer(void)</div><div class="ttdoc">0系/200系用速度計の針の表示を初期化する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:178</div></div>
+<div class="ttc" id="class_sub_html_a0f6cdde20005e50ac3b02174b23ef730"><div class="ttname"><a href="class_sub.html#a0f6cdde20005e50ac3b02174b23ef730">Sub::RunSpeedometer</a></div><div class="ttdeci">void RunSpeedometer(void)</div><div class="ttdoc">0系/200系用速度計の針を表示する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:185</div></div>
+<div class="ttc" id="class_sub_html_a41afbbb320e7bd8689143ff456a8f162"><div class="ttname"><a href="class_sub.html#a41afbbb320e7bd8689143ff456a8f162">Sub::Current</a></div><div class="ttdeci">float Current</div><div class="ttdoc">電流値[A] </div><div class="ttdef"><b>Definition:</b> Sub.h:55</div></div>
+<div class="ttc" id="class_sub_html_a1603ba0c365eae1e5bbee56cc20bb49c"><div class="ttname"><a href="class_sub.html#a1603ba0c365eae1e5bbee56cc20bb49c">Sub::LightSwUp</a></div><div class="ttdeci">void LightSwUp(void)</div><div class="ttdoc">手元灯SWが開放された際に実行する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:88</div></div>
+<div class="ttc" id="class_sub_html_ac5d76ae105a82db79bc088bbaf677d1b"><div class="ttname"><a href="class_sub.html#ac5d76ae105a82db79bc088bbaf677d1b">Sub::next_lcd_sw_up_sound_</a></div><div class="ttdeci">int next_lcd_sw_up_sound_</div><div class="ttdoc">1フレーム後のLCD切り替えSWの開放音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:37</div></div>
+<div class="ttc" id="class_sub_html_a2e8e902707219fbf2f259ccf58be33b8"><div class="ttname"><a href="class_sub.html#a2e8e902707219fbf2f259ccf58be33b8">Sub::light_status_</a></div><div class="ttdeci">int light_status_</div><div class="ttdoc">手元灯の状態(0: 消灯, 1: 点灯) </div><div class="ttdef"><b>Definition:</b> Sub.h:67</div></div>
+<div class="ttc" id="class_sub_html_a6c6af486fba49b03743f1e0c196248f4"><div class="ttname"><a href="class_sub.html#a6c6af486fba49b03743f1e0c196248f4">Sub::light_sw_up_sound_</a></div><div class="ttdeci">int light_sw_up_sound_</div><div class="ttdoc">手元灯SWの開放音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:69</div></div>
+<div class="ttc" id="class_sub_html_a6331f95617d3d359585478ced51b6526"><div class="ttname"><a href="class_sub.html#a6331f95617d3d359585478ced51b6526">Sub::cv_voltage_</a></div><div class="ttdeci">int cv_voltage_</div><div class="ttdoc">制御電圧 </div><div class="ttdef"><b>Definition:</b> Sub.h:59</div></div>
+<div class="ttc" id="class_sub_html_aecd582ee48e367e287dcae408d26ff76"><div class="ttname"><a href="class_sub.html#aecd582ee48e367e287dcae408d26ff76">Sub::Reverser</a></div><div class="ttdeci">const int * Reverser</div><div class="ttdoc">レバーサー位置(-1: 後, 0: 中立, 1: 前) </div><div class="ttdef"><b>Definition:</b> Sub.h:53</div></div>
+<div class="ttc" id="class_sub_html_a065e34d04f7f1b1fc6f057293038e3d8"><div class="ttname"><a href="class_sub.html#a065e34d04f7f1b1fc6f057293038e3d8">Sub::LcdSwDown</a></div><div class="ttdeci">void LcdSwDown(void)</div><div class="ttdoc">LCD切り替えSWが押下された際に呼び出される関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:56</div></div>
+<div class="ttc" id="class_sub_html_a1d05d72f7fc760d999396cb64f11341a"><div class="ttname"><a href="class_sub.html#a1d05d72f7fc760d999396cb64f11341a">Sub::atc_brake_notch_</a></div><div class="ttdeci">const int * atc_brake_notch_</div><div class="ttdoc">ATCブレーキ出力ノッチ </div><div class="ttdef"><b>Definition:</b> Sub.h:54</div></div>
+<div class="ttc" id="class_sub_html"><div class="ttname"><a href="class_sub.html">Sub</a></div><div class="ttdoc">その他機能を再現するクラス </div><div class="ttdef"><b>Definition:</b> Sub.h:31</div></div>
+<div class="ttc" id="class_sub_html_a645b909e42dd3cdb22f5b1b593526b4b"><div class="ttname"><a href="class_sub.html#a645b909e42dd3cdb22f5b1b593526b4b">Sub::digital_clock_</a></div><div class="ttdeci">boost::array&lt; int, 6 &gt; digital_clock_</div><div class="ttdoc">1桁ごと表示するデジタル時計 </div><div class="ttdef"><b>Definition:</b> Sub.h:70</div></div>
+<div class="ttc" id="class_sub_html_a404bdad012995be69ca51d8bda4fcfd5"><div class="ttname"><a href="class_sub.html#a404bdad012995be69ca51d8bda4fcfd5">Sub::next_light_sw_down_sound_</a></div><div class="ttdeci">int next_light_sw_down_sound_</div><div class="ttdoc">1フレーム後の手元灯SWの押下音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:38</div></div>
+<div class="ttc" id="class_sub_html_a97040151c22ec6949de3a6c22361d16d"><div class="ttname"><a href="class_sub.html#a97040151c22ec6949de3a6c22361d16d">Sub::lcd_sw_down_sound_</a></div><div class="ttdeci">int lcd_sw_down_sound_</div><div class="ttdoc">LCD切り替えSWの押下音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:64</div></div>
+<div class="ttc" id="class_sub_html_a6933c65d0dac6a8215d9880d854e49ef"><div class="ttname"><a href="class_sub.html#a6933c65d0dac6a8215d9880d854e49ef">Sub::current_negative_</a></div><div class="ttdeci">int current_negative_</div><div class="ttdoc">電流値[A]の負号 </div><div class="ttdef"><b>Definition:</b> Sub.h:56</div></div>
+<div class="ttc" id="class_sub_html_afa71a543bc0369cc321aecea54d600b1"><div class="ttname"><a href="class_sub.html#afa71a543bc0369cc321aecea54d600b1">Sub::Sub</a></div><div class="ttdeci">Sub(void)</div><div class="ttdef"><b>Definition:</b> Sub.cpp:28</div></div>
+<div class="ttc" id="class_sub_html_a03df04402efaeeb2a7420cd9bd044029"><div class="ttname"><a href="class_sub.html#a03df04402efaeeb2a7420cd9bd044029">Sub::PlayAtcAirSound</a></div><div class="ttdeci">void PlayAtcAirSound(void)</div><div class="ttdoc">ATCブレーキの緩解音を再生する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:45</div></div>
+<div class="ttc" id="class_sub_html_a582b8fc03970849bc609beee12d6aaee"><div class="ttname"><a href="class_sub.html#a582b8fc03970849bc609beee12d6aaee">Sub::atc_air_sound_</a></div><div class="ttdeci">int atc_air_sound_</div><div class="ttdoc">ATCブレーキの緩解音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:60</div></div>
+<div class="ttc" id="class_sub_html_a41925c024979e5f7e5ffe5baa3ebd696"><div class="ttname"><a href="class_sub.html#a41925c024979e5f7e5ffe5baa3ebd696">Sub::PlaySound</a></div><div class="ttdeci">void PlaySound(void)</div><div class="ttdoc">サウンドを再生する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:198</div></div>
+<div class="ttc" id="class_sub_html_ae48302bd086d3b0db4db498d7a6eb442"><div class="ttname"><a href="class_sub.html#ae48302bd086d3b0db4db498d7a6eb442">Sub::TrainSpeed</a></div><div class="ttdeci">const float * TrainSpeed</div><div class="ttdoc">列車速度[km/h] </div><div class="ttdef"><b>Definition:</b> Sub.h:51</div></div>
+<div class="ttc" id="class_sub_html_a0286e937d6c5bbb70a70c6d26f71cd3d"><div class="ttname"><a href="class_sub.html#a0286e937d6c5bbb70a70c6d26f71cd3d">Sub::DisplayAnalogClock</a></div><div class="ttdeci">void DisplayAnalogClock(void)</div><div class="ttdoc">アナログ時計を表示する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:123</div></div>
+<div class="ttc" id="class_sub_html_abf305e553e8e2463d50919b8d8cfdd42"><div class="ttname"><a href="class_sub.html#abf305e553e8e2463d50919b8d8cfdd42">Sub::SetAdjLoc</a></div><div class="ttdeci">void SetAdjLoc(int distance)</div><div class="ttdoc">距離表示に加算する補正値を受け取る関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:99</div></div>
+<div class="ttc" id="class_sub_html_a5aedf356e49698a68832ba7849bdc084"><div class="ttname"><a href="class_sub.html#a5aedf356e49698a68832ba7849bdc084">Sub::prev_brake_status_</a></div><div class="ttdeci">int prev_brake_status_</div><div class="ttdoc">1フレーム前のATCブレーキの状態(0: 緩解, 1: 作動) </div><div class="ttdef"><b>Definition:</b> Sub.h:34</div></div>
+<div class="ttc" id="class_sub_html_a97d6e5fd426772214ba6d2dc01de236a"><div class="ttname"><a href="class_sub.html#a97d6e5fd426772214ba6d2dc01de236a">Sub::current_list_</a></div><div class="ttdeci">boost::array&lt; int, 4 &gt; current_list_</div><div class="ttdoc">1桁ごと表示する電流値[A] </div><div class="ttdef"><b>Definition:</b> Sub.h:57</div></div>
+<div class="ttc" id="class_sub_html_a8405ecdc9b93cb2cec0547561239675b"><div class="ttname"><a href="class_sub.html#a8405ecdc9b93cb2cec0547561239675b">Sub::next_atc_air_sound_</a></div><div class="ttdeci">int next_atc_air_sound_</div><div class="ttdoc">1フレーム後のATCブレーキの緩解音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:35</div></div>
+<div class="ttc" id="class_sub_html_a5348f63e4c78528342b890273d70a56a"><div class="ttname"><a href="class_sub.html#a5348f63e4c78528342b890273d70a56a">Sub::lcd_sw_up_sound_</a></div><div class="ttdeci">int lcd_sw_up_sound_</div><div class="ttdoc">LCD切り替えSWの開放音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:65</div></div>
+<div class="ttc" id="class_sub_html_af70b978475625111b7c2f8eca42f4b98"><div class="ttname"><a href="class_sub.html#af70b978475625111b7c2f8eca42f4b98">Sub::brake_status_</a></div><div class="ttdeci">int brake_status_</div><div class="ttdoc">ATCブレーキの状態(0: 緩解, 1: 作動) </div><div class="ttdef"><b>Definition:</b> Sub.h:33</div></div>
+<div class="ttc" id="class_sub_html_a00bcb2799967b6ae408f0216ff53ba93"><div class="ttname"><a href="class_sub.html#a00bcb2799967b6ae408f0216ff53ba93">Sub::LightSwDown</a></div><div class="ttdeci">void LightSwDown(void)</div><div class="ttdoc">手元灯SWが押下された際に呼び出される関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:77</div></div>
+<div class="ttc" id="class_sub_html_a66de923fe1ad9e9a9400557c9a5459f2"><div class="ttname"><a href="class_sub.html#a66de923fe1ad9e9a9400557c9a5459f2">Sub::DisplayClock</a></div><div class="ttdeci">void DisplayClock(void)</div><div class="ttdoc">1桁ごと分割された時刻を出力する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:108</div></div>
+<div class="ttc" id="class_sub_html_acaf6c51af9b9de101961c9dbd8167a77"><div class="ttname"><a href="class_sub.html#acaf6c51af9b9de101961c9dbd8167a77">Sub::Init</a></div><div class="ttdeci">void Init(void)</div><div class="ttdoc">Initializeで実行する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:37</div></div>
+<div class="ttc" id="class_sub_html_a6d75e39488ff59febb913c63d2640687"><div class="ttname"><a href="class_sub.html#a6d75e39488ff59febb913c63d2640687">Sub::DisplayReverser</a></div><div class="ttdeci">void DisplayReverser(void)</div><div class="ttdoc">レバーサの位置を表示する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:161</div></div>
+<div class="ttc" id="class_sub_html_ac6d0758b1022853d9ccb78d7b4e470b6"><div class="ttname"><a href="class_sub.html#ac6d0758b1022853d9ccb78d7b4e470b6">Sub::reverser_position_</a></div><div class="ttdeci">int reverser_position_</div><div class="ttdoc">レバーサー位置(0: 中立, 1: 前, 2: 後) </div><div class="ttdef"><b>Definition:</b> Sub.h:61</div></div>
+<div class="ttc" id="class_sub_html_a7d0a4ed38326d8a2361139875c9ae3ca"><div class="ttname"><a href="class_sub.html#a7d0a4ed38326d8a2361139875c9ae3ca">Sub::Exe</a></div><div class="ttdeci">void Exe(void)</div><div class="ttdoc">Elapseで実行する関数 </div><div class="ttdef"><b>Definition:</b> Sub.cpp:218</div></div>
+<div class="ttc" id="class_sub_html_ac29b77a5f273cf70cd6c1d8d5c95dc0e"><div class="ttname"><a href="class_sub.html#ac29b77a5f273cf70cd6c1d8d5c95dc0e">Sub::speedometer_</a></div><div class="ttdeci">boost::array&lt; int, 28 &gt; speedometer_</div><div class="ttdoc">10km/h刻みの0系/200系用速度計の針 </div><div class="ttdef"><b>Definition:</b> Sub.h:72</div></div>
+<div class="ttc" id="class_sub_html_a4c41ae0cb03eef29f3c8ef6b9c6a1831"><div class="ttname"><a href="class_sub.html#a4c41ae0cb03eef29f3c8ef6b9c6a1831">Sub::light_sw_down_sound_</a></div><div class="ttdeci">int light_sw_down_sound_</div><div class="ttdoc">手元灯SWの押下音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:68</div></div>
+<div class="ttc" id="class_sub_html_a9a9b3d79c7ab234300ea2e89f3a970b7"><div class="ttname"><a href="class_sub.html#a9a9b3d79c7ab234300ea2e89f3a970b7">Sub::analog_clock_</a></div><div class="ttdeci">boost::array&lt; int, 3 &gt; analog_clock_</div><div class="ttdoc">アナログ時計 </div><div class="ttdef"><b>Definition:</b> Sub.h:71</div></div>
+<div class="ttc" id="class_sub_html_a4a6ba833dceb8d3de64dfe7db17eec4d"><div class="ttname"><a href="class_sub.html#a4a6ba833dceb8d3de64dfe7db17eec4d">Sub::lcd_sw_</a></div><div class="ttdeci">int lcd_sw_</div><div class="ttdoc">LCD切り替えSWの状態(0: 開放, 1: 押下) </div><div class="ttdef"><b>Definition:</b> Sub.h:62</div></div>
+<div class="ttc" id="class_sub_html_a08687ebb62481537c3b41d23078a5313"><div class="ttname"><a href="class_sub.html#a08687ebb62481537c3b41d23078a5313">Sub::ac_voltage_</a></div><div class="ttdeci">int ac_voltage_</div><div class="ttdoc">交流電圧 </div><div class="ttdef"><b>Definition:</b> Sub.h:58</div></div>
+<div class="ttc" id="class_sub_html_a30461df99957e10010ae6a3426ee9764"><div class="ttname"><a href="class_sub.html#a30461df99957e10010ae6a3426ee9764">Sub::lcd_status_</a></div><div class="ttdeci">int lcd_status_</div><div class="ttdoc">LCDの状態(0: 表示1, 1: 表示2) </div><div class="ttdef"><b>Definition:</b> Sub.h:63</div></div>
+<div class="ttc" id="class_sub_html_ab661eb1b24358b43ee5477e7eaf620a9"><div class="ttname"><a href="class_sub.html#ab661eb1b24358b43ee5477e7eaf620a9">Sub::Time</a></div><div class="ttdeci">const int * Time</div><div class="ttdoc">ゲーム内時刻[ms] </div><div class="ttdef"><b>Definition:</b> Sub.h:52</div></div>
+<div class="ttc" id="class_sub_html_a11efabe0a1ca052eeb95bd77fe012ef7"><div class="ttname"><a href="class_sub.html#a11efabe0a1ca052eeb95bd77fe012ef7">Sub::next_light_sw_up_sound_</a></div><div class="ttdeci">int next_light_sw_up_sound_</div><div class="ttdoc">1フレーム後の手元灯SWの開放音の状態 </div><div class="ttdef"><b>Definition:</b> Sub.h:39</div></div>
+<div class="ttc" id="class_sub_html_a729ba42636cbcad3e8d7f61fb03aa384"><div class="ttname"><a href="class_sub.html#a729ba42636cbcad3e8d7f61fb03aa384">Sub::light_sw_</a></div><div class="ttdeci">int light_sw_</div><div class="ttdoc">手元灯SWの状態(0: 開放, 1: 押下) </div><div class="ttdef"><b>Definition:</b> Sub.h:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

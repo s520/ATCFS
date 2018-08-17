@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS: Accel.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Accel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_accel_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2018 S520</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met :</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// this list of conditions and the following disclaimer in the documentation</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// and / or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// DISCLAIMED.IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef ACCEL_H_</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ACCEL_H_</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_accel.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_accel.html">Accel</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_accel.html#a072d5df89760e1b6ca34e3d2b78764c2">   32</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_accel.html#a072d5df89760e1b6ca34e3d2b78764c2">prev_spd_</a>;  </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_accel.html#a0183c38dd1653376345740c76ccbfbd7">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_accel.html#a0183c38dd1653376345740c76ccbfbd7">prev_time_</a>;  </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_accel.html#a4caf1cb9142b3c33bb2e1ce73c9dda17">   34</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_accel.html#a4caf1cb9142b3c33bb2e1ce73c9dda17">prev_raw_accel_</a>;  </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_accel.html#ab1b55bfe0a7621cb170cfa87d0bfdadb">   35</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_accel.html#ab1b55bfe0a7621cb170cfa87d0bfdadb">alpha_</a>;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_accel.html#a3ab7a6d44cdb16ab7dc0cdd11465b7f9">CalcRawAccel</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_accel.html#adff271ac418cbf768833592fd7be5dc1">CalcEmaAccel</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_accel.html#a84b4a656d2e056239e5a6e7cb9b92f0f">   41</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> *<a class="code" href="class_accel.html#a84b4a656d2e056239e5a6e7cb9b92f0f">TrainSpeed</a>;  </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_accel.html#aa0d41d839815683efe111e3d94b56b63">   42</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> *<a class="code" href="class_accel.html#aa0d41d839815683efe111e3d94b56b63">Time</a>;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_accel.html#ae3c6f4243bf7e21194c0d31bad5ae91a">   43</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_accel.html#ae3c6f4243bf7e21194c0d31bad5ae91a">raw_accel_</a>;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_accel.html#aef020324e07aea7490647e79c2561c59">   44</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_accel.html#aef020324e07aea7490647e79c2561c59">ema_accel_</a>;  </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_accel.html#a1676b88087421e1e4616692e6f2b13eb">Accel</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_accel.html#aa127e41f77cb7baf942ab8ae84a93eaa">~Accel</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_accel.html#a79855a06c9b483a42cc3b17dbf64f0e9">Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c">Exe</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif  // ACCEL_H_</span></div>
+<div class="ttc" id="class_accel_html_aef020324e07aea7490647e79c2561c59"><div class="ttname"><a href="class_accel.html#aef020324e07aea7490647e79c2561c59">Accel::ema_accel_</a></div><div class="ttdeci">float ema_accel_</div><div class="ttdoc">指数移動平均加速度[km/h/s] </div><div class="ttdef"><b>Definition:</b> Accel.h:44</div></div>
+<div class="ttc" id="class_accel_html_a4caf1cb9142b3c33bb2e1ce73c9dda17"><div class="ttname"><a href="class_accel.html#a4caf1cb9142b3c33bb2e1ce73c9dda17">Accel::prev_raw_accel_</a></div><div class="ttdeci">float prev_raw_accel_</div><div class="ttdoc">1フレーム前の生の加速度[km/h/s] </div><div class="ttdef"><b>Definition:</b> Accel.h:34</div></div>
+<div class="ttc" id="class_accel_html_a79855a06c9b483a42cc3b17dbf64f0e9"><div class="ttname"><a href="class_accel.html#a79855a06c9b483a42cc3b17dbf64f0e9">Accel::Init</a></div><div class="ttdeci">void Init(void)</div><div class="ttdoc">Initializeで実行する関数 </div><div class="ttdef"><b>Definition:</b> Accel.cpp:36</div></div>
+<div class="ttc" id="class_accel_html_acdabc347da6b4f0fbce6f9e13f58cc0c"><div class="ttname"><a href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c">Accel::Exe</a></div><div class="ttdeci">void Exe(void)</div><div class="ttdoc">Elapseで実行する関数 </div><div class="ttdef"><b>Definition:</b> Accel.cpp:63</div></div>
+<div class="ttc" id="class_accel_html_a072d5df89760e1b6ca34e3d2b78764c2"><div class="ttname"><a href="class_accel.html#a072d5df89760e1b6ca34e3d2b78764c2">Accel::prev_spd_</a></div><div class="ttdeci">float prev_spd_</div><div class="ttdoc">1フレーム前の列車速度[km/h] </div><div class="ttdef"><b>Definition:</b> Accel.h:32</div></div>
+<div class="ttc" id="class_accel_html"><div class="ttname"><a href="class_accel.html">Accel</a></div><div class="ttdoc">列車の加速度を算出するクラス </div><div class="ttdef"><b>Definition:</b> Accel.h:30</div></div>
+<div class="ttc" id="class_accel_html_aa0d41d839815683efe111e3d94b56b63"><div class="ttname"><a href="class_accel.html#aa0d41d839815683efe111e3d94b56b63">Accel::Time</a></div><div class="ttdeci">const int * Time</div><div class="ttdoc">ゲーム内時刻[ms] </div><div class="ttdef"><b>Definition:</b> Accel.h:42</div></div>
+<div class="ttc" id="class_accel_html_adff271ac418cbf768833592fd7be5dc1"><div class="ttname"><a href="class_accel.html#adff271ac418cbf768833592fd7be5dc1">Accel::CalcEmaAccel</a></div><div class="ttdeci">void CalcEmaAccel(void)</div><div class="ttdoc">列車の指数移動平均加速度を算出する関数 </div><div class="ttdef"><b>Definition:</b> Accel.cpp:55</div></div>
+<div class="ttc" id="class_accel_html_ae3c6f4243bf7e21194c0d31bad5ae91a"><div class="ttname"><a href="class_accel.html#ae3c6f4243bf7e21194c0d31bad5ae91a">Accel::raw_accel_</a></div><div class="ttdeci">float raw_accel_</div><div class="ttdoc">生の加速度[km/h/s] </div><div class="ttdef"><b>Definition:</b> Accel.h:43</div></div>
+<div class="ttc" id="class_accel_html_a3ab7a6d44cdb16ab7dc0cdd11465b7f9"><div class="ttname"><a href="class_accel.html#a3ab7a6d44cdb16ab7dc0cdd11465b7f9">Accel::CalcRawAccel</a></div><div class="ttdeci">void CalcRawAccel(void)</div><div class="ttdoc">列車の生の加速度を算出する関数 </div><div class="ttdef"><b>Definition:</b> Accel.cpp:43</div></div>
+<div class="ttc" id="class_accel_html_a0183c38dd1653376345740c76ccbfbd7"><div class="ttname"><a href="class_accel.html#a0183c38dd1653376345740c76ccbfbd7">Accel::prev_time_</a></div><div class="ttdeci">int prev_time_</div><div class="ttdoc">1フレーム前のゲーム内時刻[ms] </div><div class="ttdef"><b>Definition:</b> Accel.h:33</div></div>
+<div class="ttc" id="class_accel_html_a84b4a656d2e056239e5a6e7cb9b92f0f"><div class="ttname"><a href="class_accel.html#a84b4a656d2e056239e5a6e7cb9b92f0f">Accel::TrainSpeed</a></div><div class="ttdeci">const float * TrainSpeed</div><div class="ttdoc">列車速度[km/h] </div><div class="ttdef"><b>Definition:</b> Accel.h:41</div></div>
+<div class="ttc" id="class_accel_html_aa127e41f77cb7baf942ab8ae84a93eaa"><div class="ttname"><a href="class_accel.html#aa127e41f77cb7baf942ab8ae84a93eaa">Accel::~Accel</a></div><div class="ttdeci">virtual ~Accel(void)</div><div class="ttdef"><b>Definition:</b> Accel.cpp:30</div></div>
+<div class="ttc" id="class_accel_html_a1676b88087421e1e4616692e6f2b13eb"><div class="ttname"><a href="class_accel.html#a1676b88087421e1e4616692e6f2b13eb">Accel::Accel</a></div><div class="ttdeci">Accel(void)</div><div class="ttdef"><b>Definition:</b> Accel.cpp:27</div></div>
+<div class="ttc" id="class_accel_html_ab1b55bfe0a7621cb170cfa87d0bfdadb"><div class="ttname"><a href="class_accel.html#ab1b55bfe0a7621cb170cfa87d0bfdadb">Accel::alpha_</a></div><div class="ttdeci">float alpha_</div><div class="ttdoc">平滑化係数(0&lt;α&lt;1) </div><div class="ttdef"><b>Definition:</b> Accel.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

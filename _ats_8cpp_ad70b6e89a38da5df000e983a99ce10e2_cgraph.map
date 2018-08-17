@@ -1,0 +1,5 @@
+<map id="KeyUp" name="KeyUp">
+<area shape="rect" id="node2" href="$class_atc.html#a8bc5d4c5a847570ee8158161bc88a916" title="確認ボタンが開放された際に実行する関数 " alt="" coords="118,5,258,32"/>
+<area shape="rect" id="node3" href="$class_sub.html#a1603ba0c365eae1e5bbee56cc20bb49c" title="手元灯SWが開放された際に実行する関数 " alt="" coords="129,56,247,83"/>
+<area shape="rect" id="node4" href="$class_sub.html#ac09ed098a49bb64c412498466e0a468f" title="LCD切り替えSWが開放された際に実行する関数 " alt="" coords="133,107,243,133"/>
+</map>

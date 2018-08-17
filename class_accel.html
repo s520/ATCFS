@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS: Accel クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_accel-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">Accel クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>列車の加速度を算出するクラス  
+ <a href="class_accel.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_accel_8h_source.html">Accel.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1676b88087421e1e4616692e6f2b13eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a1676b88087421e1e4616692e6f2b13eb">Accel</a> (void)</td></tr>
+<tr class="separator:a1676b88087421e1e4616692e6f2b13eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa127e41f77cb7baf942ab8ae84a93eaa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#aa127e41f77cb7baf942ab8ae84a93eaa">~Accel</a> (void)</td></tr>
+<tr class="separator:aa127e41f77cb7baf942ab8ae84a93eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79855a06c9b483a42cc3b17dbf64f0e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a79855a06c9b483a42cc3b17dbf64f0e9">Init</a> (void)</td></tr>
+<tr class="memdesc:a79855a06c9b483a42cc3b17dbf64f0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializeで実行する関数  <a href="#a79855a06c9b483a42cc3b17dbf64f0e9">[詳解]</a><br/></td></tr>
+<tr class="separator:a79855a06c9b483a42cc3b17dbf64f0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdabc347da6b4f0fbce6f9e13f58cc0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c">Exe</a> (void)</td></tr>
+<tr class="memdesc:acdabc347da6b4f0fbce6f9e13f58cc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elapseで実行する関数  <a href="#acdabc347da6b4f0fbce6f9e13f58cc0c">[詳解]</a><br/></td></tr>
+<tr class="separator:acdabc347da6b4f0fbce6f9e13f58cc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a84b4a656d2e056239e5a6e7cb9b92f0f"><td class="memItemLeft" align="right" valign="top">const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a84b4a656d2e056239e5a6e7cb9b92f0f">TrainSpeed</a></td></tr>
+<tr class="memdesc:a84b4a656d2e056239e5a6e7cb9b92f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">列車速度[km/h]  <a href="#a84b4a656d2e056239e5a6e7cb9b92f0f">[詳解]</a><br/></td></tr>
+<tr class="separator:a84b4a656d2e056239e5a6e7cb9b92f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d41d839815683efe111e3d94b56b63"><td class="memItemLeft" align="right" valign="top">const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#aa0d41d839815683efe111e3d94b56b63">Time</a></td></tr>
+<tr class="memdesc:aa0d41d839815683efe111e3d94b56b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム内時刻[ms]  <a href="#aa0d41d839815683efe111e3d94b56b63">[詳解]</a><br/></td></tr>
+<tr class="separator:aa0d41d839815683efe111e3d94b56b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c6f4243bf7e21194c0d31bad5ae91a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#ae3c6f4243bf7e21194c0d31bad5ae91a">raw_accel_</a></td></tr>
+<tr class="memdesc:ae3c6f4243bf7e21194c0d31bad5ae91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">生の加速度[km/h/s]  <a href="#ae3c6f4243bf7e21194c0d31bad5ae91a">[詳解]</a><br/></td></tr>
+<tr class="separator:ae3c6f4243bf7e21194c0d31bad5ae91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef020324e07aea7490647e79c2561c59"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#aef020324e07aea7490647e79c2561c59">ema_accel_</a></td></tr>
+<tr class="memdesc:aef020324e07aea7490647e79c2561c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">指数移動平均加速度[km/h/s]  <a href="#aef020324e07aea7490647e79c2561c59">[詳解]</a><br/></td></tr>
+<tr class="separator:aef020324e07aea7490647e79c2561c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3ab7a6d44cdb16ab7dc0cdd11465b7f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a3ab7a6d44cdb16ab7dc0cdd11465b7f9">CalcRawAccel</a> (void)</td></tr>
+<tr class="memdesc:a3ab7a6d44cdb16ab7dc0cdd11465b7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">列車の生の加速度を算出する関数  <a href="#a3ab7a6d44cdb16ab7dc0cdd11465b7f9">[詳解]</a><br/></td></tr>
+<tr class="separator:a3ab7a6d44cdb16ab7dc0cdd11465b7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff271ac418cbf768833592fd7be5dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#adff271ac418cbf768833592fd7be5dc1">CalcEmaAccel</a> (void)</td></tr>
+<tr class="memdesc:adff271ac418cbf768833592fd7be5dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">列車の指数移動平均加速度を算出する関数  <a href="#adff271ac418cbf768833592fd7be5dc1">[詳解]</a><br/></td></tr>
+<tr class="separator:adff271ac418cbf768833592fd7be5dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a072d5df89760e1b6ca34e3d2b78764c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a072d5df89760e1b6ca34e3d2b78764c2">prev_spd_</a></td></tr>
+<tr class="memdesc:a072d5df89760e1b6ca34e3d2b78764c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレーム前の列車速度[km/h]  <a href="#a072d5df89760e1b6ca34e3d2b78764c2">[詳解]</a><br/></td></tr>
+<tr class="separator:a072d5df89760e1b6ca34e3d2b78764c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0183c38dd1653376345740c76ccbfbd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a0183c38dd1653376345740c76ccbfbd7">prev_time_</a></td></tr>
+<tr class="memdesc:a0183c38dd1653376345740c76ccbfbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレーム前のゲーム内時刻[ms]  <a href="#a0183c38dd1653376345740c76ccbfbd7">[詳解]</a><br/></td></tr>
+<tr class="separator:a0183c38dd1653376345740c76ccbfbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caf1cb9142b3c33bb2e1ce73c9dda17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#a4caf1cb9142b3c33bb2e1ce73c9dda17">prev_raw_accel_</a></td></tr>
+<tr class="memdesc:a4caf1cb9142b3c33bb2e1ce73c9dda17"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレーム前の生の加速度[km/h/s]  <a href="#a4caf1cb9142b3c33bb2e1ce73c9dda17">[詳解]</a><br/></td></tr>
+<tr class="separator:a4caf1cb9142b3c33bb2e1ce73c9dda17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b55bfe0a7621cb170cfa87d0bfdadb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_accel.html#ab1b55bfe0a7621cb170cfa87d0bfdadb">alpha_</a></td></tr>
+<tr class="memdesc:ab1b55bfe0a7621cb170cfa87d0bfdadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">平滑化係数(0&lt;α&lt;1)  <a href="#ab1b55bfe0a7621cb170cfa87d0bfdadb">[詳解]</a><br/></td></tr>
+<tr class="separator:ab1b55bfe0a7621cb170cfa87d0bfdadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>列車の加速度を算出するクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a1676b88087421e1e4616692e6f2b13eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Accel::Accel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa127e41f77cb7baf942ab8ae84a93eaa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Accel::~Accel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="adff271ac418cbf768833592fd7be5dc1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Accel::CalcEmaAccel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列車の指数移動平均加速度を算出する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_accel_adff271ac418cbf768833592fd7be5dc1_icgraph.png" border="0" usemap="#class_accel_adff271ac418cbf768833592fd7be5dc1_icgraph" alt=""/></div>
+<map name="class_accel_adff271ac418cbf768833592fd7be5dc1_icgraph" id="class_accel_adff271ac418cbf768833592fd7be5dc1_icgraph">
+<area shape="rect" id="node2" href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c" title="Elapseで実行する関数 " alt="" coords="206,5,293,32"/><area shape="rect" id="node3" href="atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="342,5,405,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ab7a6d44cdb16ab7dc0cdd11465b7f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Accel::CalcRawAccel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列車の生の加速度を算出する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_accel_a3ab7a6d44cdb16ab7dc0cdd11465b7f9_icgraph.png" border="0" usemap="#class_accel_a3ab7a6d44cdb16ab7dc0cdd11465b7f9_icgraph" alt=""/></div>
+<map name="class_accel_a3ab7a6d44cdb16ab7dc0cdd11465b7f9_icgraph" id="class_accel_a3ab7a6d44cdb16ab7dc0cdd11465b7f9_icgraph">
+<area shape="rect" id="node2" href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c" title="Elapseで実行する関数 " alt="" coords="206,5,293,32"/><area shape="rect" id="node3" href="atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="342,5,405,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acdabc347da6b4f0fbce6f9e13f58cc0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Accel::Exe </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elapseで実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_cgraph.png" border="0" usemap="#class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_cgraph" alt=""/></div>
+<map name="class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_cgraph" id="class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_cgraph">
+<area shape="rect" id="node2" href="class_accel.html#a3ab7a6d44cdb16ab7dc0cdd11465b7f9" title="列車の生の加速度を算出する関数 " alt="" coords="142,5,293,32"/><area shape="rect" id="node3" href="class_accel.html#adff271ac418cbf768833592fd7be5dc1" title="列車の指数移動平均加速度を算出する関数 " alt="" coords="142,56,293,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_icgraph.png" border="0" usemap="#class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_icgraph" alt=""/></div>
+<map name="class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_icgraph" id="class_accel_acdabc347da6b4f0fbce6f9e13f58cc0c_icgraph">
+<area shape="rect" id="node2" href="atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="142,5,205,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a79855a06c9b483a42cc3b17dbf64f0e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Accel::Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializeで実行する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_accel_a79855a06c9b483a42cc3b17dbf64f0e9_icgraph.png" border="0" usemap="#class_accel_a79855a06c9b483a42cc3b17dbf64f0e9_icgraph" alt=""/></div>
+<map name="class_accel_a79855a06c9b483a42cc3b17dbf64f0e9_icgraph" id="class_accel_a79855a06c9b483a42cc3b17dbf64f0e9_icgraph">
+<area shape="rect" id="node2" href="atsplugin_8h.html#ae77df478d1817d333027d18debc58e0d" title="ゲーム開始時に呼び出される関数 " alt="" coords="136,5,240,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="ab1b55bfe0a7621cb170cfa87d0bfdadb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Accel::alpha_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>平滑化係数(0&lt;α&lt;1) </p>
+
+</div>
+</div>
+<a class="anchor" id="aef020324e07aea7490647e79c2561c59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Accel::ema_accel_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指数移動平均加速度[km/h/s] </p>
+
+</div>
+</div>
+<a class="anchor" id="a4caf1cb9142b3c33bb2e1ce73c9dda17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Accel::prev_raw_accel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレーム前の生の加速度[km/h/s] </p>
+
+</div>
+</div>
+<a class="anchor" id="a072d5df89760e1b6ca34e3d2b78764c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Accel::prev_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレーム前の列車速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="a0183c38dd1653376345740c76ccbfbd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Accel::prev_time_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレーム前のゲーム内時刻[ms] </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3c6f4243bf7e21194c0d31bad5ae91a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Accel::raw_accel_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>生の加速度[km/h/s] </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d41d839815683efe111e3d94b56b63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int* Accel::Time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲーム内時刻[ms] </p>
+
+</div>
+</div>
+<a class="anchor" id="a84b4a656d2e056239e5a6e7cb9b92f0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float* Accel::TrainSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>列車速度[km/h] </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="_accel_8h_source.html">Accel.h</a></li>
+<li><a class="el" href="_accel_8cpp.html">Accel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

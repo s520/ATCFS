@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS: Ats.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">Ats.cpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="stdafx_8h_source.html">stdafx.h</a>&quot;</code><br/>
+<code>#include &lt;Shlwapi.h&gt;</code><br/>
+<code>#include &lt;deque&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_accel_8h_source.html">Accel.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_atc_8h_source.html">Atc.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_ats_p_8h_source.html">AtsP.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_wiper_8h_source.html">Wiper.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_sub_8h_source.html">Sub.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_atcfs_cfg_8h_source.html">AtcfsCfg.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="atsplugin_8h_source.html">atsplugin.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_ats_8h_source.html">Ats.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Ats.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp__incl.png" border="0" usemap="#_ats_8cpp" alt=""/></div>
+<map name="_ats_8cpp" id="_ats_8cpp">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="stdafx.h" alt="" coords="423,80,492,107"/><area shape="rect" id="node9" href="_accel_8h.html" title="Accel.h" alt="" coords="748,80,815,107"/><area shape="rect" id="node10" href="_atc_8h.html" title="Atc.h" alt="" coords="839,80,892,107"/><area shape="rect" id="node16" href="_ats_p_8h.html" title="AtsP.h" alt="" coords="917,80,979,107"/><area shape="rect" id="node17" href="_wiper_8h.html" title="Wiper.h" alt="" coords="1084,80,1151,107"/><area shape="rect" id="node18" href="_sub_8h.html" title="Sub.h" alt="" coords="1004,80,1059,107"/><area shape="rect" id="node19" href="_atcfs_cfg_8h.html" title="AtcfsCfg.h" alt="" coords="159,80,244,107"/><area shape="rect" id="node23" href="atsplugin_8h.html" title="atsplugin.h" alt="" coords="1175,80,1260,107"/><area shape="rect" id="node24" href="_ats_8h.html" title="Ats.h" alt="" coords="620,80,673,107"/><area shape="rect" id="node14" href="_base_8h.html" title="Base.h" alt="" coords="979,155,1041,181"/></map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af8f88e9e7df8023b92e56fac8ce669a7"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#af8f88e9e7df8023b92e56fac8ce669a7">DllMain</a> (HANDLE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)</td></tr>
+<tr class="separator:af8f88e9e7df8023b92e56fac8ce669a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3cabfe39774f6be819e4d4a3ac3b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a0c3cabfe39774f6be819e4d4a3ac3b49">Load</a> ()</td></tr>
+<tr class="memdesc:a0c3cabfe39774f6be819e4d4a3ac3b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグインが読み込まれたときに呼び出される関数  <a href="#a0c3cabfe39774f6be819e4d4a3ac3b49">[詳解]</a><br/></td></tr>
+<tr class="separator:a0c3cabfe39774f6be819e4d4a3ac3b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3c182bdb166d62fc903935082bc589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#ade3c182bdb166d62fc903935082bc589">Dispose</a> ()</td></tr>
+<tr class="memdesc:ade3c182bdb166d62fc903935082bc589"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグインが解放されたときに呼び出される関数  <a href="#ade3c182bdb166d62fc903935082bc589">[詳解]</a><br/></td></tr>
+<tr class="separator:ade3c182bdb166d62fc903935082bc589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa282df2255ca28980523610cbaa4dc15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> int WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#aa282df2255ca28980523610cbaa4dc15">GetPluginVersion</a> ()</td></tr>
+<tr class="memdesc:aa282df2255ca28980523610cbaa4dc15"><td class="mdescLeft">&#160;</td><td class="mdescRight">このATSプラグインが準じているフォーマットを返す関数  <a href="#aa282df2255ca28980523610cbaa4dc15">[詳解]</a><br/></td></tr>
+<tr class="separator:aa282df2255ca28980523610cbaa4dc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206b7ed09392648e02b9549411b1a2f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a206b7ed09392648e02b9549411b1a2f8">SetVehicleSpec</a> (<a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_p_e_c.html">ATS_VEHICLESPEC</a> vehicleSpec)</td></tr>
+<tr class="memdesc:a206b7ed09392648e02b9549411b1a2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">車両読み込み時に呼び出される関数  <a href="#a206b7ed09392648e02b9549411b1a2f8">[詳解]</a><br/></td></tr>
+<tr class="separator:a206b7ed09392648e02b9549411b1a2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a2d67bc0543e6fc43f1ecc248a3842"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a49a2d67bc0543e6fc43f1ecc248a3842">BVE_Initialize</a> (int brake)</td></tr>
+<tr class="memdesc:a49a2d67bc0543e6fc43f1ecc248a3842"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム開始時に呼び出される関数  <a href="#a49a2d67bc0543e6fc43f1ecc248a3842">[詳解]</a><br/></td></tr>
+<tr class="separator:a49a2d67bc0543e6fc43f1ecc248a3842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e35167fc5d4829c79d779a8c34afed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> <a class="el" href="struct_a_t_s___h_a_n_d_l_e_s.html">ATS_HANDLES</a> WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a29e35167fc5d4829c79d779a8c34afed">Elapse</a> (<a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_t_a_t_e.html">ATS_VEHICLESTATE</a> vehicleState, int *panel, int *sound)</td></tr>
+<tr class="memdesc:a29e35167fc5d4829c79d779a8c34afed"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームごとに呼び出される関数  <a href="#a29e35167fc5d4829c79d779a8c34afed">[詳解]</a><br/></td></tr>
+<tr class="separator:a29e35167fc5d4829c79d779a8c34afed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cad1637d0770a328e0cc34d7051ad7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a75cad1637d0770a328e0cc34d7051ad7">SetPower</a> (int notch)</td></tr>
+<tr class="memdesc:a75cad1637d0770a328e0cc34d7051ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">主ハンドルが扱われたときに呼び出される関数  <a href="#a75cad1637d0770a328e0cc34d7051ad7">[詳解]</a><br/></td></tr>
+<tr class="separator:a75cad1637d0770a328e0cc34d7051ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57938d7b8cc1a336e92d4e45d632c2d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a57938d7b8cc1a336e92d4e45d632c2d8">SetBrake</a> (int notch)</td></tr>
+<tr class="memdesc:a57938d7b8cc1a336e92d4e45d632c2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキが扱われたときに呼び出される関数  <a href="#a57938d7b8cc1a336e92d4e45d632c2d8">[詳解]</a><br/></td></tr>
+<tr class="separator:a57938d7b8cc1a336e92d4e45d632c2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ce2326ad24dded0cec18e803be2966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a74ce2326ad24dded0cec18e803be2966">SetReverser</a> (int pos)</td></tr>
+<tr class="memdesc:a74ce2326ad24dded0cec18e803be2966"><td class="mdescLeft">&#160;</td><td class="mdescRight">レバーサーが扱われたときに呼び出される関数  <a href="#a74ce2326ad24dded0cec18e803be2966">[詳解]</a><br/></td></tr>
+<tr class="separator:a74ce2326ad24dded0cec18e803be2966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a672c3519d5e1163b2bfb9b1942f4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#af6a672c3519d5e1163b2bfb9b1942f4b">KeyDown</a> (int atsKeyCode)</td></tr>
+<tr class="memdesc:af6a672c3519d5e1163b2bfb9b1942f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが押されたときに呼び出される関数  <a href="#af6a672c3519d5e1163b2bfb9b1942f4b">[詳解]</a><br/></td></tr>
+<tr class="separator:af6a672c3519d5e1163b2bfb9b1942f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70b6e89a38da5df000e983a99ce10e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#ad70b6e89a38da5df000e983a99ce10e2">KeyUp</a> (int atsKeyCode)</td></tr>
+<tr class="memdesc:ad70b6e89a38da5df000e983a99ce10e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが離されたときに呼び出される関数  <a href="#ad70b6e89a38da5df000e983a99ce10e2">[詳解]</a><br/></td></tr>
+<tr class="separator:ad70b6e89a38da5df000e983a99ce10e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb5e75785d51a1aaf2897f7769e43e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#adfb5e75785d51a1aaf2897f7769e43e4">HornBlow</a> (int hornType)</td></tr>
+<tr class="memdesc:adfb5e75785d51a1aaf2897f7769e43e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">警笛が扱われたときに呼び出される関数  <a href="#adfb5e75785d51a1aaf2897f7769e43e4">[詳解]</a><br/></td></tr>
+<tr class="separator:adfb5e75785d51a1aaf2897f7769e43e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2b5e46f495d2229685933bfb205c4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#ada2b5e46f495d2229685933bfb205c4b">DoorOpen</a> ()</td></tr>
+<tr class="memdesc:ada2b5e46f495d2229685933bfb205c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">客室ドアが開いたときに呼び出される関数  <a href="#ada2b5e46f495d2229685933bfb205c4b">[詳解]</a><br/></td></tr>
+<tr class="separator:ada2b5e46f495d2229685933bfb205c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43dd96048c96305fdd4c7ce4aba74a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a43dd96048c96305fdd4c7ce4aba74a6b">DoorClose</a> ()</td></tr>
+<tr class="memdesc:a43dd96048c96305fdd4c7ce4aba74a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">客室ドアが閉まったときに呼び出される関数  <a href="#a43dd96048c96305fdd4c7ce4aba74a6b">[詳解]</a><br/></td></tr>
+<tr class="separator:a43dd96048c96305fdd4c7ce4aba74a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cbd4c46ed148de117aa6ea168a41e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a67cbd4c46ed148de117aa6ea168a41e0">SetSignal</a> (int signal)</td></tr>
+<tr class="memdesc:a67cbd4c46ed148de117aa6ea168a41e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の閉塞の信号が変化したときに呼び出される関数  <a href="#a67cbd4c46ed148de117aa6ea168a41e0">[詳解]</a><br/></td></tr>
+<tr class="separator:a67cbd4c46ed148de117aa6ea168a41e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad931058736ecc5f8e2bcd228c438b1b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#ad931058736ecc5f8e2bcd228c438b1b2">SetBeaconData</a> (<a class="el" href="struct_a_t_s___b_e_a_c_o_n_d_a_t_a.html">ATS_BEACONDATA</a> beaconData)</td></tr>
+<tr class="memdesc:ad931058736ecc5f8e2bcd228c438b1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子を越えたときに呼び出される関数  <a href="#ad931058736ecc5f8e2bcd228c438b1b2">[詳解]</a><br/></td></tr>
+<tr class="separator:ad931058736ecc5f8e2bcd228c438b1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64863ab89282bec8b5846c0b9348ad08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ats_8cpp.html#a64863ab89282bec8b5846c0b9348ad08">PassedBeacon</a> ()</td></tr>
+<tr class="memdesc:a64863ab89282bec8b5846c0b9348ad08"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetBeaconDataの実行タイミングを制御するための関数  <a href="#a64863ab89282bec8b5846c0b9348ad08">[詳解]</a><br/></td></tr>
+<tr class="separator:a64863ab89282bec8b5846c0b9348ad08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="a49a2d67bc0543e6fc43f1ecc248a3842"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI BVE_Initialize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brake</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ゲーム開始時に呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brake</td><td>ゲーム開始時のブレーキ弁の状態</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_a49a2d67bc0543e6fc43f1ecc248a3842_cgraph.png" border="0" usemap="#_ats_8cpp_a49a2d67bc0543e6fc43f1ecc248a3842_cgraph" alt=""/></div>
+<map name="_ats_8cpp_a49a2d67bc0543e6fc43f1ecc248a3842_cgraph" id="_ats_8cpp_a49a2d67bc0543e6fc43f1ecc248a3842_cgraph">
+<area shape="rect" id="node2" href="class_accel.html#a79855a06c9b483a42cc3b17dbf64f0e9" title="Initializeで実行する関数 " alt="" coords="161,5,242,32"/><area shape="rect" id="node3" href="class_atc.html#a25e96942a5e1b2e32ee62d3e7c1e3afb" title="Initializeで実行する関数 " alt="" coords="158,56,245,83"/><area shape="rect" id="node6" href="class_atsp.html#a39207dad3d8d801eba6cbe3fbc9e830b" title="Initializeで実行する関数 " alt="" coords="159,107,243,133"/><area shape="rect" id="node8" href="class_wiper.html#a7bb553330738312e9f1cd87049696ea2" title="Wiper::Init" alt="" coords="160,157,243,184"/><area shape="rect" id="node9" href="class_sub.html#acaf6c51af9b9de101961c9dbd8167a77" title="Initializeで実行する関数 " alt="" coords="166,208,237,235"/><area shape="rect" id="node4" href="class_atc.html#a94c036a1061ada246ea587d7bf61b583" title="速度に対応する信号インデックスを返す関数 " alt="" coords="301,5,427,32"/><area shape="rect" id="node5" href="class_atc.html#abf0a7dc339c0641e4b03fc45f9b1d9c9" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="297,56,431,83"/><area shape="rect" id="node7" href="class_atsp.html#a2c49bbbf67ae2ab91f6c39568a710226" title="速度照査パターンを作成する関数 " alt="" coords="294,107,434,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ade3c182bdb166d62fc903935082bc589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI Dispose </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プラグインが解放されたときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="af8f88e9e7df8023b92e56fac8ce669a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL APIENTRY DllMain </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>ul_reason_for_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpReserved</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_af8f88e9e7df8023b92e56fac8ce669a7_cgraph.png" border="0" usemap="#_ats_8cpp_af8f88e9e7df8023b92e56fac8ce669a7_cgraph" alt=""/></div>
+<map name="_ats_8cpp_af8f88e9e7df8023b92e56fac8ce669a7_cgraph" id="_ats_8cpp_af8f88e9e7df8023b92e56fac8ce669a7_cgraph">
+<area shape="rect" id="node2" href="class_atcfs_cfg.html#a0f36722302449396b88b9a5b7896890f" title="AtcfsCfg::load" alt="" coords="120,5,227,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a43dd96048c96305fdd4c7ce4aba74a6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI DoorClose </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客室ドアが閉まったときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ada2b5e46f495d2229685933bfb205c4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI DoorOpen </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客室ドアが開いたときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a29e35167fc5d4829c79d779a8c34afed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> <a class="el" href="struct_a_t_s___h_a_n_d_l_e_s.html">ATS_HANDLES</a> WINAPI Elapse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_t_a_t_e.html">ATS_VEHICLESTATE</a>&#160;</td>
+          <td class="paramname"><em>vehicleState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>panel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1フレームごとに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vehicleState</td><td>車両の状態量</td></tr>
+    <tr><td class="paramname">panel</td><td>パネルに渡す値</td></tr>
+    <tr><td class="paramname">sound</td><td>サウンド</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>BVEに渡す制御値</dd></dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_a29e35167fc5d4829c79d779a8c34afed_cgraph.png" border="0" usemap="#_ats_8cpp_a29e35167fc5d4829c79d779a8c34afed_cgraph" alt=""/></div>
+<map name="_ats_8cpp_a29e35167fc5d4829c79d779a8c34afed_cgraph" id="_ats_8cpp_a29e35167fc5d4829c79d779a8c34afed_cgraph">
+<area shape="rect" id="node2" href="_ats_8cpp.html#a64863ab89282bec8b5846c0b9348ad08" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="118,132,229,159"/><area shape="rect" id="node9" href="class_accel.html#acdabc347da6b4f0fbce6f9e13f58cc0c" title="Elapseで実行する関数 " alt="" coords="130,259,217,285"/><area shape="rect" id="node12" href="class_atc.html#a891ee2d5c8fa99b979e43379b8614663" title="Elapseで実行する関数 " alt="" coords="127,664,219,691"/><area shape="rect" id="node33" href="class_atsp.html#acd0d2d705b729542c4aa2d8d924e351c" title="Elapseで実行する関数 " alt="" coords="129,1019,218,1045"/><area shape="rect" id="node40" href="class_wiper.html#a199010d0923f74b7c941ab718ae6bd24" title="Wiper::Exe" alt="" coords="130,1145,217,1172"/><area shape="rect" id="node42" href="class_sub.html#a7d0a4ed38326d8a2361139875c9ae3ca" title="Elapseで実行する関数 " alt="" coords="135,1424,211,1451"/><area shape="rect" id="node3" href="class_atc.html#a698a73b4310e5f6c01cc46bc1aeb6c08" title="SetBeaconDataで実行される関数 " alt="" coords="284,56,441,83"/><area shape="rect" id="node6" href="class_atsp.html#afbd20ef5e15ff528693452c9031ea9f0" title="SetBeaconDataで実行される関数 " alt="" coords="285,107,440,133"/><area shape="rect" id="node8" href="class_sub.html#abf305e553e8e2463d50919b8d8cfdd42" title="距離表示に加算する補正値を受け取る関数 " alt="" coords="306,157,419,184"/><area shape="rect" id="node4" href="class_atc.html#a878f174d0e0ee60b0897480d049153b1" title="ATC&#45;1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 " alt="" coords="523,5,645,32"/><area shape="rect" id="node5" href="class_atc.html#afa1bc831e3c27552f8719326b4bd0844" title="ATC方式を切り替える関数 " alt="" coords="509,56,659,83"/><area shape="rect" id="node7" href="class_atsp.html#a63fb294dfe04cb7c77cc3e5e4389fe0e" title="勾配補正設定を行う関数 " alt="" coords="509,107,659,133"/><area shape="rect" id="node10" href="class_accel.html#a3ab7a6d44cdb16ab7dc0cdd11465b7f9" title="列車の生の加速度を算出する関数 " alt="" coords="287,208,438,235"/><area shape="rect" id="node11" href="class_accel.html#adff271ac418cbf768833592fd7be5dc1" title="列車の指数移動平均加速度を算出する関数 " alt="" coords="287,259,438,285"/><area shape="rect" id="node13" href="class_atc.html#a7729db908df2c00d1957fa3ce2f10d50" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="305,411,421,437"/><area shape="rect" id="node14" href="class_atc.html#ab28b0ba255fa5d3677db7a2fbfd23ad5" title="信号インデックスを速度に変換する関数 " alt="" coords="771,411,845,437"/><area shape="rect" id="node16" href="class_atc.html#a9afbeb458e4349356c09c5b4fa230b9d" title="パターン情報を集約する関数 " alt="" coords="296,715,429,741"/><area shape="rect" id="node17" href="class_atc.html#a83e7b49b2925740ffb1b5849b3ca16e7" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="303,664,422,691"/><area shape="rect" id="node22" href="class_atc.html#ab2a7d3d46010d27ec599008784ff274b" title="デジタルATC用車内信号を生成する関数 " alt="" coords="498,613,670,640"/><area shape="rect" id="node24" href="class_atc.html#a0b07226d0aa1bf9ae9f3b076e70362f6" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="304,765,421,792"/><area shape="rect" id="node26" href="class_atc.html#a4d74d0ea7ca05aff397655d760c3ffaa" title="インジケーターの表示を初期化する関数 " alt="" coords="285,816,440,843"/><area shape="rect" id="node27" href="class_atc.html#aec232d6002900b1288bdcaad6a48e8fe" title="インジケーターの表示を実行する関数 " alt="" coords="291,512,434,539"/><area shape="rect" id="node31" href="class_atc.html#aeb8dda895461e30ee23d60260b745596" title="副速度計の表示を実行する関数 " alt="" coords="497,563,671,589"/><area shape="rect" id="node32" href="class_atc.html#a0e46d640f90ffc8e9b3ef266281fcc6b" title="サウンドを再生する関数 " alt="" coords="306,867,419,893"/><area shape="rect" id="node15" href="class_atc.html#a7f3f559840537697400463fbb21b01d4" title="予見Fuzzy制御ではないブレーキノッチを出力する関数 " alt="" coords="509,411,659,437"/><area shape="rect" id="node18" href="class_atc.html#a575fb2420a8d3172e2593ff138abdd3f" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="523,664,645,691"/><area shape="rect" id="node19" href="class_atc.html#a653c0a64e85a2a6d6978d9bcb140c79c" title="パターン照査速度を算出する関数 " alt="" coords="513,715,655,741"/><area shape="rect" id="node21" href="class_atc.html#a994149818da128f97bf49daad8d1163f" title="パターン降下開始地点を算出する関数 " alt="" coords="514,765,654,792"/><area shape="rect" id="node20" href="class_base.html#a3be019f034d372218e5252de50306f10" title="vectorコンテナへの範囲外アクセス時にデフォルト値を返す関数 " alt="" coords="721,715,895,741"/><area shape="rect" id="node23" href="class_atc.html#a94c036a1061ada246ea587d7bf61b583" title="速度に対応する信号インデックスを返す関数 " alt="" coords="745,613,871,640"/><area shape="rect" id="node25" href="class_atc.html#a83141d1e584eefdfe10cd48184100cc5" title="全パターンに対する最大の最適ブレーキノッチを出力する関数 " alt="" coords="523,816,645,843"/><area shape="rect" id="node28" href="class_atc.html#a23cd2949ba41bca7941a232e1e2c791c" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="517,461,651,488"/><area shape="rect" id="node30" href="class_atc.html#aa8b902a62675db13ae68f32a92a4d2f8" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="517,512,651,539"/><area shape="rect" id="node29" href="class_atc.html#aee46d2b3c6071f948db34cebad6653bd" title="速度を7セグに表示する関数 " alt="" coords="749,512,867,539"/><area shape="rect" id="node34" href="class_atsp.html#aa48418ca28de5e1cc9f9d70dc00a8d98" title="パターン情報を集約する関数 " alt="" coords="293,917,433,944"/><area shape="rect" id="node35" href="class_atsp.html#af767ce5a679f1f3dcdf707266d5aef56" title="各パターン情報からパターン照査速度を算出し、パターン接近警報の状態を取得する関数 " alt="" coords="299,968,426,995"/><area shape="rect" id="node36" href="class_atsp.html#abc76f450e697f48a58c165064b91e0c2" title="フラグのON, OFFを行う関数 " alt="" coords="301,1019,424,1045"/><area shape="rect" id="node37" href="class_atsp.html#a40dd35cfad590104eb43a97aac7f44dd" title="ブレーキノッチを出力する関数 " alt="" coords="305,1069,420,1096"/><area shape="rect" id="node38" href="class_atsp.html#a5b8b0329d729e97acd1d791b71273f57" title="ランプの点灯, 消灯を行う関数 " alt="" coords="296,1120,429,1147"/><area shape="rect" id="node39" href="class_atsp.html#a263b78eb089488180968e304b6851ed8" title="サウンドを再生する関数 " alt="" coords="303,1171,423,1197"/><area shape="rect" id="node41" href="class_wiper.html#ab34c87b1d1bcbe3ba96f3608cbef946e" title="Wiper::MoveWiper" alt="" coords="297,1221,428,1248"/><area shape="rect" id="node43" href="class_sub.html#a03df04402efaeeb2a7420cd9bd044029" title="ATCブレーキの緩解音を再生する関数 " alt="" coords="287,1272,439,1299"/><area shape="rect" id="node44" href="class_sub.html#a66de923fe1ad9e9a9400557c9a5459f2" title="1桁ごと分割された時刻を出力する関数 " alt="" coords="297,1323,428,1349"/><area shape="rect" id="node45" href="class_sub.html#a0286e937d6c5bbb70a70c6d26f71cd3d" title="アナログ時計を表示する関数 " alt="" coords="277,1373,448,1400"/><area shape="rect" id="node46" href="class_sub.html#a33acf8b0cda0495a79de1680ee22cb5f" title="1桁ごと分割された電流値を出力する関数 " alt="" coords="293,1424,433,1451"/><area shape="rect" id="node47" href="class_sub.html#a6d75e39488ff59febb913c63d2640687" title="レバーサの位置を表示する関数 " alt="" coords="287,1475,438,1501"/><area shape="rect" id="node48" href="class_sub.html#a7451c920bb8d2d8d09b916bac01970f0" title="0系/200系用速度計の針の表示を初期化する関数 " alt="" coords="280,1525,445,1552"/><area shape="rect" id="node49" href="class_sub.html#a0f6cdde20005e50ac3b02174b23ef730" title="0系/200系用速度計の針を表示する関数 " alt="" coords="285,1576,440,1603"/><area shape="rect" id="node50" href="class_sub.html#a41925c024979e5f7e5ffe5baa3ebd696" title="サウンドを再生する関数 " alt="" coords="305,1627,421,1653"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa282df2255ca28980523610cbaa4dc15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> int WINAPI GetPluginVersion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>このATSプラグインが準じているフォーマットを返す関数 </p>
+<dl class="section return"><dt>戻り値</dt><dd>フォーマットのバージョン</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adfb5e75785d51a1aaf2897f7769e43e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI HornBlow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hornType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>警笛が扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hornType</td><td>警笛のタイプ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af6a672c3519d5e1163b2bfb9b1942f4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atsKeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ATSキーが押されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">atsKeyCode</td><td>ATSキー コード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_af6a672c3519d5e1163b2bfb9b1942f4b_cgraph.png" border="0" usemap="#_ats_8cpp_af6a672c3519d5e1163b2bfb9b1942f4b_cgraph" alt=""/></div>
+<map name="_ats_8cpp_af6a672c3519d5e1163b2bfb9b1942f4b_cgraph" id="_ats_8cpp_af6a672c3519d5e1163b2bfb9b1942f4b_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#abad9543fb50ce63d392d6469e0f0272e" title="確認ボタンが押下された際に実行する関数 " alt="" coords="133,5,291,32"/><area shape="rect" id="node4" href="class_atsp.html#a5fb3d72c256faf2db03dddf0c4d49f84" title="復帰ボタンが押下された際に実行する関数 " alt="" coords="135,56,289,83"/><area shape="rect" id="node6" href="class_sub.html#a00bcb2799967b6ae408f0216ff53ba93" title="手元灯SWが押下された際に呼び出される関数 " alt="" coords="145,107,279,133"/><area shape="rect" id="node7" href="class_wiper.html#aae08ef14f88c6a61087e3836bc55732d" title="Wiper::WiperRequest" alt="" coords="139,157,285,184"/><area shape="rect" id="node8" href="class_sub.html#a065e34d04f7f1b1fc6f057293038e3d8" title="LCD切り替えSWが押下された際に呼び出される関数 " alt="" coords="149,208,275,235"/><area shape="rect" id="node3" href="class_atc.html#ab61b1847931420e9d441229bfee20dda" title="ATC&#45;1, 2, NSにおいて確認扱いの判定を行う関数 " alt="" coords="343,5,428,32"/><area shape="rect" id="node5" href="class_atsp.html#a3e48d82add848baef57311522442e939" title="復帰扱いの判定を行う関数 " alt="" coords="339,56,431,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad70b6e89a38da5df000e983a99ce10e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI KeyUp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atsKeyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ATSキーが離されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">atsKeyCode</td><td>ATSキー コード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_ad70b6e89a38da5df000e983a99ce10e2_cgraph.png" border="0" usemap="#_ats_8cpp_ad70b6e89a38da5df000e983a99ce10e2_cgraph" alt=""/></div>
+<map name="_ats_8cpp_ad70b6e89a38da5df000e983a99ce10e2_cgraph" id="_ats_8cpp_ad70b6e89a38da5df000e983a99ce10e2_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#a8bc5d4c5a847570ee8158161bc88a916" title="確認ボタンが開放された際に実行する関数 " alt="" coords="118,5,258,32"/><area shape="rect" id="node3" href="class_sub.html#a1603ba0c365eae1e5bbee56cc20bb49c" title="手元灯SWが開放された際に実行する関数 " alt="" coords="129,56,247,83"/><area shape="rect" id="node4" href="class_sub.html#ac09ed098a49bb64c412498466e0a468f" title="LCD切り替えSWが開放された際に実行する関数 " alt="" coords="133,107,243,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c3cabfe39774f6be819e4d4a3ac3b49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI Load </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プラグインが読み込まれたときに呼び出される関数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a64863ab89282bec8b5846c0b9348ad08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PassedBeacon </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SetBeaconDataの実行タイミングを制御するための関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_cgraph.png" border="0" usemap="#_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_cgraph" alt=""/></div>
+<map name="_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_cgraph" id="_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#a698a73b4310e5f6c01cc46bc1aeb6c08" title="SetBeaconDataで実行される関数 " alt="" coords="165,56,323,83"/><area shape="rect" id="node5" href="class_atsp.html#afbd20ef5e15ff528693452c9031ea9f0" title="SetBeaconDataで実行される関数 " alt="" coords="167,107,321,133"/><area shape="rect" id="node8" href="class_sub.html#abf305e553e8e2463d50919b8d8cfdd42" title="距離表示に加算する補正値を受け取る関数 " alt="" coords="187,157,301,184"/><area shape="rect" id="node3" href="class_atc.html#a878f174d0e0ee60b0897480d049153b1" title="ATC&#45;1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 " alt="" coords="385,5,508,32"/><area shape="rect" id="node4" href="class_atc.html#afa1bc831e3c27552f8719326b4bd0844" title="ATC方式を切り替える関数 " alt="" coords="371,56,522,83"/><area shape="rect" id="node6" href="class_atsp.html#a63fb294dfe04cb7c77cc3e5e4389fe0e" title="勾配補正設定を行う関数 " alt="" coords="372,107,521,133"/><area shape="rect" id="node7" href="class_atsp.html#a2c49bbbf67ae2ab91f6c39568a710226" title="速度照査パターンを作成する関数 " alt="" coords="571,107,711,133"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_icgraph.png" border="0" usemap="#_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_icgraph" alt=""/></div>
+<map name="_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_icgraph" id="_ats_8cpp_a64863ab89282bec8b5846c0b9348ad08_icgraph">
+<area shape="rect" id="node2" href="atsplugin_8h.html#a348491d58db3bdcbd9a74fe176626c28" title="1フレームごとに呼び出される関数 " alt="" coords="166,5,229,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad931058736ecc5f8e2bcd228c438b1b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetBeaconData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_t_s___b_e_a_c_o_n_d_a_t_a.html">ATS_BEACONDATA</a>&#160;</td>
+          <td class="paramname"><em>beaconData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>地上子を越えたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beaconData</td><td>車上子で受け取った情報</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a57938d7b8cc1a336e92d4e45d632c2d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetBrake </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>notch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ブレーキが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notch</td><td>ブレーキノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a75cad1637d0770a328e0cc34d7051ad7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetPower </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>notch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>主ハンドルが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notch</td><td>力行ノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a74ce2326ad24dded0cec18e803be2966"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetReverser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>レバーサーが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>レバーサー位置</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a67cbd4c46ed148de117aa6ea168a41e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetSignal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の閉塞の信号が変化したときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ats_8cpp_a67cbd4c46ed148de117aa6ea168a41e0_cgraph.png" border="0" usemap="#_ats_8cpp_a67cbd4c46ed148de117aa6ea168a41e0_cgraph" alt=""/></div>
+<map name="_ats_8cpp_a67cbd4c46ed148de117aa6ea168a41e0_cgraph" id="_ats_8cpp_a67cbd4c46ed148de117aa6ea168a41e0_cgraph">
+<area shape="rect" id="node2" href="class_atc.html#a35a344872a8d1fa1f586d194852ea3f3" title="SetSignalで実行される関数 " alt="" coords="133,5,291,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a206b7ed09392648e02b9549411b1a2f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="atsplugin_8h.html#a2cf22746029f59244a1459adfc189cb8">ATS_API</a> void WINAPI SetVehicleSpec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_t_s___v_e_h_i_c_l_e_s_p_e_c.html">ATS_VEHICLESPEC</a>&#160;</td>
+          <td class="paramname"><em>vehicleSpec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>車両読み込み時に呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vehicleSpec</td><td>車両諸元</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
